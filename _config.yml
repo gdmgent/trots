@@ -1,6 +1,6 @@
 # Site settings
 # -------------
-baseurl     : "" # the subpath of your site, e.g. /blog/
+baseurl     : "/trots" # the subpath of your site, e.g. /blog/
 colour      : primary
 language    : nl
 host        : 127.0.0.1
