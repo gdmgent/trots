@@ -1,0 +1,281 @@
+.share-container {
+  display: block;
+  text-align: center;
+  .share-cta {
+    padding: 10px 0 15px 3px;
+    font-weight: 400;
+    opacity: 1;
+    color: #424242;
+    text-align: center;
+    visibility: visible;
+    transition: opacity 250ms 250ms ease-in-out, visibility 0s 0.25s ease-in-out;
+    font-size: 22px;
+  }
+  .share-toggle {
+    display: block;
+    position: fixed;
+    padding: 5.2px 13px 0 5px;
+    font-weight: 100;
+    top: 50px;
+    right: 41px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    background: $dark-grey;
+    @include transition(all 0ms 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275));
+  }
+  .share-list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    .share-link {
+      margin: 0 3px;
+      padding: 3px 6px;
+      width: 28px;
+      height: 28px;
+      font-size: 17px;
+      background: $mid-grey;
+      color: white;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+       i {
+         -webkit-pointer-events: none;
+         pointer-events: none;
+       }
+      &:hover {
+        background: $primary;
+        &:nth-child(1){
+          background: $primary;
+        }
+        &:nth-child(2){
+          background: $blue;
+        }
+        &:nth-child(3){
+          background: $pink;
+        }
+        &:nth-child(4){
+          background: $green;
+        }
+        animation-name: wiggle;
+        -webkit-animation-name: wiggle;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-timing-function: ease-in-out;
+        transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -webkit-transform-origin: 50% 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 200px) {
+  .sidebarContainer {
+    z-index: -1;
+    top: 0px;
+    width: calc(100% - 20px);
+    padding: 5% 1%;
+    margin: 10px;
+    background-color: #f2f2f2;
+    .content {
+      margin: 0 28px;
+      h2 {
+        color: $blue;
+      }
+      p {
+        font-size: 16px;
+        color: $text-color;
+      }
+      blockquote {
+        color: $text-color;
+        font-size: 15px;
+        border-left: 3px solid $text-color;
+        padding-left: 21px;
+        margin-left: 0;
+        span {
+          color: $blue;
+          font-weight: 800;
+        }
+      }
+    }
+    .share-container {
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: $lg) {
+  .sidebar-toggle {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    margin-top: -30px;
+    background-color: #f2f2f2;
+    border-radius: 100%;
+    @include transition(all 250ms ease-in-out);
+    &:hover {
+      background-color: $light-grey;
+    }
+    .line {
+      height: 3px;
+      width: 20px;
+      border-radius:25%;
+      background-color: $text-color;
+      display: block;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-style: flat;
+      -moz-transform-style: flat;
+      -ms-transform-style: flat;
+      -o-transform-style: flat;
+      transform-style: flat;
+      @include transition(all 250ms ease-in-out);
+    }
+  }
+  .sidebarContainer {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    top: 0px;
+    width: 400px;
+    @include transition(all 250ms ease-in-out);
+    height:100%;
+    position: fixed;
+    background: #f2f2f2;
+
+    .share-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 30px;
+      display: block;
+    }
+    .bg-box {
+      position: absolute;
+      z-index: -1;
+      height:100%;
+      width:100%;
+    }
+
+    .content {
+      margin: 40px 30px;
+      opacity: 1;
+      visibility: visible;
+      @include transition(opacity 250ms 250ms ease-in-out, visibility 0ms 250ms ease-in-out);
+      p {
+        font-size: 14px;
+        color: $text-color;
+      }
+      blockquote {
+        color: $text-color;
+        font-size: 14px;
+        border-left: 1px solid $light-grey;
+        padding-left: 15px;
+        margin-left: 0;
+        span {
+          color: $blue;
+          font-weight: 800;
+          display: inline-block;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .sidebar-toggle {
+      @include transition(all 250ms ease-in-out);
+
+      .line {
+        &:nth-child(1) {
+          @include transform(translate(18px, 22px) rotate(-45deg));
+        }
+        &:nth-child(2) {
+          @include transform(translate(18px, 32px) rotate(45deg));
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    & ~ .footer{
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  .shrink {
+    width: 3px;
+    border-right: 25px solid #f2f2f2;
+    background: #f2f2f2;
+    cursor: pointer;
+    @include transition(width 250ms ease-in-out);
+    .menu {
+      align-self: flex-start;
+      margin-left: 18%;
+    }
+    .content {
+      opacity: 0;
+      visibility: hidden;
+      @include transition(opacity 0ms ease-in-out, visibility 0ms ease-in-out);
+    }
+    .sidebar-toggle {
+      right:-43px;
+      background: #f2f2f2;
+      .line {
+        &:nth-child(1) {
+          @include transform(translate(31px, 22px) rotate(45deg));
+        }
+        &:nth-child(2) {
+          @include transform(translate(31px, 32px) rotate(-45deg));
+        }
+      }
+    }
+    .share-container {
+      position: fixed;
+      padding:0px;
+      width: 50px;
+      right: 30px;
+      top: 105px;
+      .share-cta {
+        opacity: 0;
+        visibility: hidden;
+        @include transition(opacity 0ms ease-in-out, visibility 0ms ease-in-out);
+      }
+      .share-toggle {
+        display: block;
+        top: 157px;
+        @include transition(all 100ms 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275));
+        &.active+.share-list .share-link {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          @include transition(all 250ms ease-in);
+        }
+      }
+      .share-list{
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .share-link {
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          margin: 3px 0;
+        }
+      }
+
+    }
+  }
+}
+

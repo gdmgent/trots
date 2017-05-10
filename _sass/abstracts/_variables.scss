@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+
+
+/// Copy text color
+/// @type Color
+$text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+/// @type Color
+$primary: rgb(238, 153, 0) !default;
+
+/// Secondary brand color green
+/// @type Color
+$green: rgb(187, 204, 0) !default;
+
+/// Secondary brand color fuchsia
+/// @type Color
+$pink: rgb(204, 0, 119) !default;
+
+/// Secondary brand color blue
+/// @type Color
+$blue: rgb(0, 170, 204) !default;
+
+
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(221, 221, 221) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(170, 170, 170) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(66, 66, 66) !default;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+$default-font-size: 16;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$xxsm  : 0/$default-font-size * 1rem;
+$xsm   : 320/$default-font-size * 1rem;
+$sm    : 480/$default-font-size * 1rem;
+$md    : 680/$default-font-size * 1rem;
+$lg    : 960/$default-font-size * 1rem;
+$xl   : 1140/$default-font-size * 1rem;
+$xxl  : 1440/$default-font-size * 1rem;
+
+
+/// Grid Prefixes map
+/// @prop {String} keys - Keys are identifiers mapped to certain grid component
+/// @prop {Map} values - Values are the class identifiers in implementation
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

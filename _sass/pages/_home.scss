@@ -1,0 +1,169 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.home {
+  overflow:hidden;
+  .row {
+    z-index: 3;
+  }
+  .intro-container {
+    position: relative;
+    width: 100%;
+    padding: 0 100px;
+
+    @media (max-width: $md){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: $sm){
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &.news-active {
+      //padding-right: 600px;
+      .intro {
+        padding-right: calc(600px - (100vw - 980px) / 2);
+      }
+      @media (max-width: 1180px){
+        .intro {
+          padding-right: 500px;
+        }
+      }
+      @media (max-width: $lg) {
+
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        .intro {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .intro {
+    position: relative;
+    max-width: 980px;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-bottom: 250px;
+    margin: 0 auto;
+    padding-right: calc(263px - (100vw - 980px) / 2);
+    p {
+      font-size: 1.3em;
+    }
+    @media (max-width: 1180px){
+      padding-right: 163px;
+    }
+    @media (max-width: $lg) {
+      padding:50px 0px;
+    }
+    @media (max-width: $md) {
+      padding:50px 0px;
+    }
+    @include transition(all 250ms cubic-bezier(0.86, 0, 0.07, 1));
+
+  }
+  .tease {
+    position: absolute;
+    text-align: center;
+    bottom:0px;
+    left: 100px;
+    max-width: 200px;
+
+    @media (max-width: $lg) {
+      left: 25px;
+    }
+
+
+    h4 {
+      font-size: 23px;
+      color: $green;
+      font-family: "Scriptorama",arial;
+    }
+    span {
+      color: $text-color;
+      display: block;
+    }
+    img {
+      @include transform(rotate(90deg) scale(1, -1));
+      position: absolute;
+      right:-50px;
+      top: 10px;
+      margin: 0 10px;
+      height: 50px;
+    }
+  }
+  .backToVid {
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    right: 25vw;
+    max-width: 210px;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    @media (max-width: $lg) {
+    }
+    @media (max-width: $md) {
+    }
+
+    @include transition(all 250ms cubic-bezier(0.86, 0, 0.07, 1));
+    h4 {
+      font-size: 23px;
+      color: $pink;
+      font-family: "Scriptorama",arial;
+    }
+    span {
+      color: $text-color;
+      font-size: 16px;
+      display: block;
+    }
+    img {
+      @include rotate(-1);
+      position: absolute;
+      right:0;
+      top:0;
+      margin: 0 10px;
+      height: 23px;
+    }
+    &:hover {
+      -webkit-filter: hue-rotate(18deg);
+      filter: hue-rotate(18deg);
+      h4 {
+        transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -webkit-transform-origin: 50% 100%;
+      }
+      img {
+        @include animation(wiggle ease-in-out 2s infinite);
+        transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -webkit-transform-origin: 50% 100%;
+      }
+    }
+  }
+  
+  @media (max-width: $md){
+    .ahs__paragraph p.intro {
+      padding-top: 50px;
+    }
+  }
+  @media (max-width: $xsm){
+    .ahs__paragraph p.intro {
+      padding-bottom: 50px;
+    }
+  }
+  .svg-container {
+    @media (max-width: $md){
+      font-size: $title-font-size*1.25+px;
+    }
+    @media (max-width: $sm){
+      font-size: $title-font-size*1.25+px;
+    }
+    @media (max-width: $xsm){
+      font-size: $title-font-size*1.25+px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+{% include components/story/head.html %}
+<body class="flex column" data-mobile>
+<div class="reveal">
+    {% include components/story/menu.html %}
+    {% include components/story/intro.html %}
+    <div class="slides">
+        {% include components/story/branding.html %}
+        {{ content }}
+        {% assign sections = page.sections %}
+        {% for section in sections %}
+        {% if section.background.type == "video" %}
+            <section data-background-video="../../assets/stories/{{page.slug}}/video/{{section.background.url}}" class="{{section.background.gradient}}" data-background-video-loop data-transition="fade-in fade-out">
+        {% else if section.background.type == "image" %}
+            <section data-transition="fade-in fade-out" class="{{section.background.gradient}}" data-background-image="../../assets/stories/{{page.slug}}/background/{{section.background.url}}">
+        {% endif %}
+        {% if section.background.mobile-still %}
+                <img src="../../assets/stories/{{page.slug}}/background/{{section.background.mobile-still}}" class="hide-on-desktop mobile-still">
+        {% endif %}
+            <div class="text mobile-{{section.background.mobile}}-text-bg text-fade-in {{section.text.position}}">
+                {% for title in section.text.title %}
+                    <h1 class="ahs__title {{title.weight}} hide-on-{{title.hide}} {{title.size}} {{title.color}}">
+                    <span class="highlight">{{title.highlight}}</span>
+                        {{title.line}}
+                    </h1>
+                {% endfor %}
+                {% for paragraph in section.text.paragraph %}
+                    <p class="ahs__paragraph {{paragraph.color}} {{paragraph.size}} hide-on-{{paragraph.hide}}"><span class="highlight">{{paragraph.highlight}}</span>{{paragraph.line}}</p><a class="link hide-on-{{paragraph.hide}}" href="{{paragraph.url}}">{{paragraph.alt}}</a>
+                {% endfor %}
+                {% if section.contact %}
+                 <div class="share-list flex">
+                    <a onclick="scroll_element_thumb_click(event); return false;" href='https://www.facebook.com/sharer/sharer.php?u={{site.url | replace: "http://", "" | replace: "https://", "" }}{{page.url}}' class="share-link facebook">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a onclick="scroll_element_thumb_click(event); return false;" href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{ site.title }}%20%7C%20{{ page.title }}" class="share-link linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a onclick="scroll_element_thumb_click(event); return false;" href='https://pinterest.com/pin/create/button/?url={{site.url}}{{page.url}}&media={{site.url}}{{thumb}}' class="share-link pintrest">
+                        <i class="fa fa-pinterest-p"></i>
+                    </a>
+                    <a onclick="scroll_element_thumb_click(event); return false;" href='https://twitter.com/home?status=Check%20out%20{{site.url | replace: "http://", "" | replace: "https://", "" }}{{page.url}}' class="share-link twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+                {% endif %}
+                </div>
+            {% for sticker in section.stickers.desktop %}
+                <img class="sticker {{sticker.position}} hide-on-mobile {{sticker.size}}" src="../../assets/stories/{{page.slug}}/stickers/{{sticker.url}}" >
+            {% endfor %}
+            {% for sticker in section.stickers.mobile %}
+                <img class="sticker {{sticker.position}} hide-on-desktop {{sticker.size}}" src="../../assets/stories/{{page.slug}}/stickers/{{sticker.url}}" >
+            {% endfor %}
+        </section>
+        {% endfor %}
+    </div>
+</div>
+{% include components/story/scripts.html %}
+</body>
+</html>

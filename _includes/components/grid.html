@@ -1,0 +1,42 @@
+
+<div class="grid-container">
+    <div class="grid-filters-scroll grid-filters container flex wrap centered justified-c">
+        <div class="grid-filters-wrapper flex">
+            <div class="filter flex justified-c centered active" data-filter="all">Alles</div>
+            <div class="filter flex justified-c centered" data-filter="intern">Interne projecten</div>
+            <div class="filter flex justified-c centered" data-filter="extern">Externe projecten</div>
+            <div class="line-marker"></div>
+        </div>
+    </div>
+    {% include components/footer.html %}
+    <div class="grid row">
+        <div class="grid-sizer"></div>
+        {% assign projects = site.projects | sort:'order' %}
+        {% for project in projects %}
+        <div id="grid-item-{{project.slug}}" class="grid-item grid-w-{{project.thumbnail.width}} grid-h-{{project.thumbnail.height}} c-{{project.thumbnail.color}}" data-type="{{ project.type }}">
+            <div class="content">
+                <style>
+                #grid-item-{{project.slug}} .content{
+                    background-color:#{{project.thumbnail.background-color}}
+                }
+                #grid-item-{{project.slug}} .hover-title {
+                    color:#{{project.thumbnail.text-color}}
+                }
+                </style>
+                <img data-src="/assets/img/projects/{{ project.slug }}/{{ project.thumbnail.url }}" class="image" alt="{{ project.title }}"/>
+                <a href="{{ project.url }}" class="hover-content flex justified-end column">
+                    <div class="hover-content-wrapper flex">
+                        <div class="hover-text-content">
+                            {% for member in project.members limit:1 %}
+                            <h4 class="hover-title">{{ member.name }}</h4>
+                            {% endfor %}
+                            <h5 class="hover-subtitle">{{ project.title }}</h5>
+                        </div>
+                        <div class="hover-text-filler flex-child stretch"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

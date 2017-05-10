@@ -1,0 +1,10 @@
+---
+---
+
+[
+{% for project in site.projects %}
+{
+"title"           : "{{ project.title | escape }}
+{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

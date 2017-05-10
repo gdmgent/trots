@@ -1,0 +1,169 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+  font-family: 'Neo Sans Pro','NeoSans',arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+  font-family: 'NeoSans',arial, sans-serif;
+}
+$title-font-size: 72;
+$title-font-size-md: 54;
+$title-font-size-sm: 36;
+$title-font-size-xsm: 36;
+
+.ahs__{
+  &title {
+    font-family: 'NeoSans',arial, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    font-size: $title-font-size+px;
+
+    &.orange,
+    .orange{
+      color: $primary;
+    }
+    &.blue,
+    .blue{
+      color: $blue;
+    }
+    &.pink,
+    .pink{
+      color: $pink;
+    }
+    &.green,
+    .green{
+      color: $green;
+    }
+    &.white,
+    .white{
+      color: white;
+    }
+    &.xxsm {
+      font-size: $title-font-size*0.10+px;
+    }
+    &.xsm {
+      font-size: $title-font-size*0.25+px;
+    }
+    &.sm {
+      font-size: $title-font-size*0.5+px;
+    }
+    &.smd {
+      font-size: $title-font-size*0.625+px;
+    }
+    &.md {
+      font-size: $title-font-size*0.75+px;
+    }
+    &.lg {
+      font-size: $title-font-size+px;
+    }
+    &.xl {
+      font-size: $title-font-size*1.25+px;
+    }
+    &.light {
+      font-weight: 300;
+    }
+    &.normal {
+      font-weight: normal;
+    }
+    &.bold {
+      font-weight: bold;
+    }
+    &.black {
+      font-weight: 900;
+    }
+
+    @media (max-width: $md){
+
+      font-size: $title-font-size-md+px;
+
+      &.xxsm {
+        font-size: $title-font-size-md*0.10+px;
+      }
+      &.xsm {
+        font-size: $title-font-size-md*0.375+px;
+      }
+      &.sm {
+        font-size: $title-font-size-md*0.5+px;
+      }
+      &.smd {
+        font-size: $title-font-size-md*0.625+px;
+      }
+      &.md {
+        font-size: $title-font-size-md*0.75+px;
+      }
+      &.lg {
+        font-size: $title-font-size-md+px;
+      }
+      &.xl {
+        font-size: $title-font-size-md*1.25+px;
+      }
+    }
+    @media (max-width: $sm){
+      font-size: $title-font-size-sm+px;
+      &.xxsm {
+        font-size: $title-font-size-sm*0.10+px;
+      }
+      &.xsm {
+        font-size: $title-font-size-sm*0.375+px;
+      }
+      &.sm {
+        font-size: $title-font-size-sm*0.5+px;
+      }
+      &.smd {
+        font-size: $title-font-size-sm*0.625+px;
+      }
+      &.md {
+        font-size: $title-font-size-sm*0.75+px;
+      }
+      &.lg {
+        font-size: $title-font-size-sm+px;
+      }
+      &.xl {
+        font-size: $title-font-size-sm*1.25+px;
+      }
+    }
+    @media (max-width: $xsm){
+      font-size: $title-font-size-xsm+px;
+      &.xxsm {
+        font-size: $title-font-size-xsm*0.10+px;
+      }
+      &.xsm {
+        font-size: $title-font-size-xsm*0.375+px;
+      }
+      &.sm {
+        font-size: $title-font-size-xsm*0.5+px;
+      }
+      &.smd {
+        font-size: $title-font-size-xsm*0.625+px;
+      }
+      &.md {
+        font-size: $title-font-size-xsm*0.75+px;
+      }
+      &.lg {
+        font-size: $title-font-size-xsm+px;
+      }
+      &.xl {
+        font-size: $title-font-size-xsm*1.25+px;
+      }
+    }
+  }
+  &paragraph {
+    font-family: 'Neo Sans Pro','NeoSans',arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    p {
+      margin: 0;
+      font-size: 1em;
+      line-height: 1.7em;
+    }
+  }
+}

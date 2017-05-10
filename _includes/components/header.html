@@ -1,0 +1,80 @@
+<header class="header">
+    <div class="ahs__rainbow flex">
+        <div class="part orange"></div>
+        <div class="part blue"></div>
+        <div class="part pink"></div>
+        <div class="part green"></div>
+    </div>
+    <button class="menu-toggle menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+    {% assign current = page.url | downcase | split: '/' %}
+    <button class="overview-toggle flex justified-c centered wrap active {% for cur in current %}{% if cur == 'project' %}visible{% endif %}{% endfor %}" onclick="window.location.href='/'" >
+        <div class="cube-row flex">
+            <div class="cube" ></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <div class="cube-row flex">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <div class="cube-row flex">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+    </button>
+</header>
+<nav class="navigation">
+    <div class="nav-bg"></div>
+    <div class="nav-container flex centered">
+        <div class="nav-container-sub">
+            <!-- For when menu gets more items
+
+            <div class="nav-block">
+                <div class="big-block flex maxed">
+                    <a class='{% if page.url == "/" %}active{% endif %}'  href="/">Home</a>
+                    <a class='{% if page.url == "/contact/" %}active{% endif %}' href="/contact">Contact</a>
+                </div>
+            </div>
+            -->
+            <div class="nav-block">
+                <a class='big-block {% if page.url == "/" %}active{% endif %}' href="/">
+                    <h3 class="ahs__title nav-title md  black" data-letters="Portfolio">
+                        Portfolio
+                        <span data-letters="Portfolio"></span>
+                    </h3>
+                </a>
+            </div>
+            <div class="nav-block">
+                <a class='big-block {% if page.url == "/stories/" %}active{% endif %}' href="/stories">
+                    <h3 class="ahs__title nav-title md  black" data-letters="GDM Stories">
+                        GDM Stories
+                        <span data-letters="GDM Stories"></span>
+                    </h3>
+                </a>
+            </div>
+            <div class="nav-block">
+                <a class='big-block {% if page.url == "/externeprojecten/" %}active{% endif %}' href="/externeprojecten">
+                    <h3 class="ahs__title nav-title md black" data-letters="Externe Projecten">
+                        Externe Projecten
+                        <span data-letters="Externe Projecten"></span>
+                    </h3>
+                </a>
+            </div>
+            <div class="nav-block">
+                <a class='big-block {% if page.url == "/contact/" %}active{% endif %}' href="/contact">
+                    <h3 class="ahs__title nav-title md black" data-letters="Contact">
+                        Contact
+                        <span data-letters="Contact"></span>
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

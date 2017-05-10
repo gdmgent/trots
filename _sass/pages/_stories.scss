@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the stories page.
+// -----------------------------------------------------------------------------
+.stories {
+  .story {
+    width: 100%;
+    min-height:400px;
+    height: 33.3333334vw;
+    margin-bottom: 0.35em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    color: $text-color; 
+    background-color: $mid-grey;
+    @include transition(all 0.2s ease-in-out);
+    .story-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left:0;
+      top:0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      @include transition(all 0.2s ease-in-out);
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+
+      &.blur {
+        @include opacity(0);
+      }
+    }
+    .story-title {
+      position: relative;
+      text-transform: uppercase;
+      text-align: center;
+      background: rgba(255,255,255,0.7);
+      padding: 12px 12px 0px;
+      @include transition(all 0.2s ease-in-out);
+      span {
+        top:-0.1em;
+        font-size: 0.8em;
+        position: relative;
+        font-weight: 300;
+      }
+    }
+    .story-description {
+      position: relative;
+      letter-spacing: 1px;
+      color: white;
+      max-width: 400px;
+      padding: 0 10px;
+      @include transition(all 0.2s ease-in-out);
+      @include transform(perspective(1000px) rotate3d(1,0,0,90deg));
+      @include opacity(0.5);
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+      text-shadow: 1px 1px 1px $text-color;
+    }
+    &:nth-child(1){
+      border:0px $primary solid;
+    }
+    &:nth-child(2){
+      border:0px $blue solid;
+    }
+    &:nth-child(3){
+      border:0px $pink solid;
+    }
+    &:nth-child(4){
+      border:0px $green solid;
+    }
+    @include on-event{
+      .story-title {
+        @include transform(translate3d(0,-20px,0));
+      }
+      .story-description {
+        @include opacity(1);
+        @include transform(perspective(1000px) rotate3d(1,0,0,0deg));
+      }
+      .story-bg{
+        @include opacity(0);
+        @include transform(scale3d(1.05,1.05,1));
+        &.blur {
+          @include opacity(0.95);
+        }
+      }
+      border-width: 0.35em;
+    }
+    &.disabled {
+      .story-bg {
+       @include opacity(0.5);
+        &.blur {
+          @include opacity(0);
+        }
+      }
+      background: $dark-grey;
+      @include on-event{
+        .story-bg.blur {
+          @include opacity(0.95);
+        }
+      }
+    }
+  }
+
+}

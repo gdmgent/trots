@@ -1,0 +1,208 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@import "vendor/font-awesome/scss/font-awesome";
+
+$font-path-neo: "../assets/fonts/neosans/" !default;
+$font-path-neo-pro: "../assets/fonts/neosans-pro/" !default;
+$font-path-scriptorama: "../assets/fonts/scriptorama/" !default;
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-BoldItalic.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-BoldItalic.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-BoldItalic.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-BoldItalic.svg#NeoSansPro-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-Italic.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Italic.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Italic.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Italic.svg#NeoSansPro-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-Regular.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Regular.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Regular.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Regular.svg#NeoSansPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro Ultra';
+  src: url($font-path-neo-pro + 'NeoSansPro-Ultra.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Ultra.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Ultra.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Ultra.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Ultra.svg#NeoSansPro-Ultra') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-LightItalic.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-LightItalic.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-LightItalic.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-LightItalic.svg#NeoSansPro-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-Bold.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Bold.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Bold.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Bold.svg#NeoSansPro-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-Medium.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Medium.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Medium.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Medium.svg#NeoSansPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neo Sans Pro';
+  src: url($font-path-neo-pro + 'NeoSansPro-Light.eot');
+  src: url($font-path-neo-pro + 'NeoSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo-pro + 'NeoSansPro-Light.woff') format('woff'),
+  url($font-path-neo-pro + 'NeoSansPro-Light.ttf') format('truetype'),
+  url($font-path-neo-pro + 'NeoSansPro-Light.svg#NeoSansPro-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-MediumItalic.eot');
+  src: url($font-path-neo + 'NeoSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-MediumItalic.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-Bold.eot');
+  src: url($font-path-neo + 'NeoSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-Bold.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-Black.eot');
+  src: url($font-path-neo + 'NeoSans-Black.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-Black.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-Italic.eot');
+  src: url($font-path-neo + 'NeoSans-Italic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-Italic.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-Light.eot');
+  src: url($font-path-neo + 'NeoSans-Light.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-Light.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-LightItalic.eot');
+  src: url($font-path-neo + 'NeoSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-LightItalic.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-BlackItalic.eot');
+  src: url($font-path-neo + 'NeoSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-BlackItalic.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-BoldItalic.eot');
+  src: url($font-path-neo + 'NeoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-BoldItalic.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans-Medium.eot');
+  src: url($font-path-neo + 'NeoSans-Medium.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans-Medium.woff') format('woff'),
+  url($font-path-neo + 'NeoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeoSans';
+  src: url($font-path-neo + 'NeoSans.eot');
+  src: url($font-path-neo + 'NeoSans.eot?#iefix') format('embedded-opentype'),
+  url($font-path-neo + 'NeoSans.woff') format('woff'),
+  url($font-path-neo + 'NeoSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scriptorama';
+  src: url($font-path-scriptorama + 'scriptorama.eot');
+  src: url($font-path-scriptorama + 'scriptorama.eot?#iefix') format('embedded-opentype'),
+  url($font-path-scriptorama + 'scriptorama.woff') format('woff'),
+  url($font-path-scriptorama + 'scriptorama.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,15 @@
+<div class="stories">
+    <div class="stories-wrapper flex column">
+        {% assign stories = site.stories | sort:'order' %}
+        {% for story in stories %}
+        <a href="{{ story.slug }}" target="_blank" id="{{ story.slug }}" class="story flex column centered justified-c {% if story.enabled == false %}disabled{% endif %}">
+            <div class="story-bg" style='background-image:url("/assets/img/stories/{{ story.thumbnail.url }}");' alt="{{ story.thumbnail.alt }}"></div>
+            <div class="story-bg blur" style='background-image:url("/assets/img/stories/{{ story.blurred.url }}");' alt="{{ story.blurred.alt }}"></div>
+            <div class="story-content">
+                <h2 class="story-title ahs__title lg black">{{ story.title | replace:'story','<span>story</span>' }}</h2>
+                <div class="story-description">{{ story.description }}</div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="sidebarContainer flex-child">
+    <div class="bg-box"></div>
+
+    <div class="content stretch">
+        <h2 class="ahs__title sm bold blue">{{ page.title }}</h2>
+        <p>{{ page.description }}</p>
+
+        <blockquote>
+        {% for member in page.members %}
+            {% assign memberIndex = {{forloop.index}} %}
+            {% if member.name %}
+                <span>{{member.name}}</span>
+            {% endif %}
+            {% if member.direction %}
+                <br>{{member.direction}}
+            {% endif %}
+            {% if member.subdirection %}
+                <br>{{member.subdirection}}
+            {% endif %}
+            {% if member.disk %}
+                <br>{{member.disk}}
+            {% endif %}
+            {% if memberIndex < forloop.length %}
+            <br><br>
+            {% endif %}
+        {% endfor %}
+        </blockquote>
+    </div>
+    <div class="sidebar-toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    {% include components/share.html %}
+</div>

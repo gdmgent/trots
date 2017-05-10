@@ -1,0 +1,294 @@
+@media (min-width: 769px) {
+  .reveal .intro {
+    background: rgba(2, 2, 2, 0.8);
+    width: 100%;
+    padding-right: 90px;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0 !important;
+    z-index: 4;
+    position: absolute;
+    overflow: hidden;
+    .info {
+      width: 500px;
+      position: absolute;
+      left: calc((100% - 590px)/2);
+      text-align: center;
+      overflow: hidden;
+      top: calc((100% - 365px)/2);
+      box-sizing: border-box;
+      height: 365px;
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        font-size: 3rem;
+      }
+      p {
+        color: white;
+        margin-bottom: 20px;
+      }
+      img {
+        height: 50px;
+      }
+      .button {
+        width: 250px;
+        padding: 15px 38px;
+        cursor: pointer;
+        position: absolute;
+        top: 300px;
+        left: calc((100% - 250px) / 2);
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+        border: 2px solid #bc0;
+        color: #bc0;
+        &:hover {
+          background-color: $green;
+          color: $text-color;
+        }
+      }
+    }
+    &.hide {
+      @include animation(fadeOutUp 0.7s ease both);
+    }
+    &.gone {
+      visibility: hidden;
+    }
+
+    svg {
+      @include animation(desktop 1.3s ease-in-out infinite);
+      width: 200px;
+      position: absolute;
+      right: 100px;
+      .DSKportfolio, .DSKfullscreen, .DSKnavigate, .DSKshare {
+        font-family: Scriptorama;
+        font-size:30px;
+        letter-spacing:-1;
+      }
+      .DSKportfolio {
+        fill: $blue;
+      }
+      .DSKnavigate {
+        fill: #BBCC00;
+      }
+      .DSKfullscreen {
+        fill: $pink;
+      }
+      .DSKshare {
+        fill: white;
+      }
+      .arrow_blue {
+        fill:none;
+        stroke:#16ACCC;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+      }
+      .arrow_green {
+        fill:none;
+        stroke:#BCCB2C;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+      }
+      .arrow_pink {
+        fill:none;
+        stroke: #C91578;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+      }
+      .arrow_white {
+        fill:none;
+        stroke:#FFFFFF;
+        stroke-width:6;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+        stroke-miterlimit:10;
+      }
+      &:nth-of-type(1) {
+        top: 55px;
+      }
+      &:nth-of-type(2) {
+        top: 115px;
+      }
+      &:nth-of-type(3) {
+        top: 155px;
+      }
+      &:nth-of-type(4) {
+        top: 250px;
+      }
+    }
+
+  }
+}
+
+
+@include keyframes(desktop) {
+  0% {
+    @include transform(translate(1px, 0px));
+    @include transform-origin(0px 0px);
+  }
+  50% {
+    @include transform(translate(3px, 0px));
+    @include transform-origin(0px 0px);
+  }
+  100% {
+    @include transform-origin(0px 0px);
+    @include transform(translate(1px, 0px));
+  }
+}
+
+
+@include keyframes(mobile) {
+  0% {
+    @include translate (1px, 0px);
+    @include transform-origin(0px 0px)
+  }
+  50% {
+    @include translate (2px, -1px);
+    @include transform-origin(0px 0px)
+  }
+  100% {
+    @include translate (1px, 0px);
+    @include transform-origin(0px 0px)
+  }
+}
+
+@media (max-width: 768px) {
+  .reveal .intro {
+    background: rgba(2, 2, 2, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0 !important;
+    box-sizing: border-box;
+    padding: 30px;
+    z-index: 20;
+    position: absolute;
+    overflow: hidden;
+    svg {
+      height: 20px;
+      position: absolute;
+      right: 75px;
+      @include animation(mobile 1.3s ease-in-out infinite);
+      .MBportfolio, .MBfullscreen, .MBnavigate, .MBshare {
+        font-family: Scriptorama;
+        font-size: 36.8846px;
+      }
+      .arrow_blue, .arrow_orange, .arrow_pink, .arrow_white {
+        fill: none;
+        stroke-width: 3.3531;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+      .MBportfolio {
+        fill: #00AACC;
+      }
+      .MBnavigate {
+        fill: $primary;
+      }
+      .MBfullscreen {
+        fill: $pink;
+      }
+      .MBshare {
+        fill: white;
+      }
+      .arrow_blue {
+        stroke: $blue;
+      }
+      .arrow_orange {
+        stroke: $primary;
+      }
+      .arrow_pink {
+        stroke: $pink;
+      }
+      .arrow_white {
+        stroke: white;
+      }
+      &:nth-of-type(5) {
+        top: 25px;
+      }
+      &:nth-of-type(6) {
+        top: 70px;
+      }
+      &:nth-of-type(7) {
+        bottom: 60px;
+        height: 45px;
+      }
+      &:nth-of-type(8) {
+        bottom: 130px;
+      }
+    }
+    img {
+      height: 36px;
+      position: absolute;
+      &:nth-of-type(1) {
+        right: 21px;
+        top: 12px;
+      }
+      &:nth-of-type(2) {
+        top: 55px;
+        right: 21px;
+      }
+      &:nth-of-type(3) {
+        bottom: 125px;
+        right: 21px;
+      }
+      &:nth-of-type(4) {
+        bottom: 75px;
+        right: 21px;
+      }
+    }
+    .info {
+      top: calc((100% - 300px) / 2);
+      color: #FFF;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      position: absolute;
+      h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        color: #bc0;
+        margin: 5px 0 0 0;
+      }
+      p {
+        line-height: 1.5em;
+        margin: 15px 0;
+        font-size: 0.9rem;
+      }
+      .button {
+        width: 40%;
+        padding: 2%;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-left: calc((100% - 40%) / 2);
+        text-transform: uppercase;
+        font-weight: 500;
+        border: 2px solid $green;
+        border-radius: 25px;
+        color: $green;
+      }
+    }
+    &.hide {
+      @include animation(fadeOutUp .7s ease both);
+    }
+    &.gone {
+      visibility: hidden;
+    }
+  }
+}
+
+@include keyframes(fadeOutUp) {
+  from {
+    @include opacity(1);   
+  }
+  to {
+    @include opacity(0);
+    @include transform(translate(0, -100%));
+  }
+}

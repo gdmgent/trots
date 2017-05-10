@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {% include components/head.html %}
+    <body class="flex column" data-mobile>
+        {% if page.url == "/" %}
+            {% include components/intro.html %}
+        {% endif %}
+        <div class="wrapper">
+        {% include components/header.html %}
+        <main id="main" role="main" class="flex column flex-child stretch">
+        {{ content }}
+        </main>
+        {% if page.url != "/" %}
+            {% include components/footer.html %}
+        {% endif %}
+        {% include components/scripts.html %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+# Site settings
+# -------------
+baseurl     : "" # the subpath of your site, e.g. /blog/
+colour      : primary
+language    : nl
+host        : 127.0.0.1
+port        : 4000
+
+# SEO
+# ---
+title      : 'Online portfolio GDM'
+domain     : 'Grafische en Digitale Media'
+subdomain  : 'TROTS'
+description : "This is an assignment for Artevelde University College Ghent."
+author      : 'Bachelor of Graphical and Digital Media | Artevelde University College Ghent'
+copyright   : 'Copyright 2010-16 Artevelde University College Ghent. All Rights Reserved.'
+keywords    : 'portfolio, stories, grafische, digitale, media, gdm, arteveldehogeschool'
+
+# Tracking Services
+# ---------------
+google-analytics-tracking_id  :  "UA-18202861-3"
+
+# url        :
+# image      :
+# Build settings
+# --------------
+# --------------
+gems:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: compressed
+permalink: pretty
+collections:
+  projects:
+    output: true
+    permalink: /project/:slug
+  stories:
+    output: true
+    permalink: /stories/:slug/
+  news:
+    output: false
+defaults:
+    - scope:
+        path: ""
+        type: projects
+      values:
+        layout: "detail"
+        thumbnail:
+            height: 1
+            width: 1
+            color: 1
+    - scope:
+        path: ""
+        type: stories
+      values:
+        layout: "story"
+exclude:
+  - Gemfile
+  - LICENSE
+  - README.md

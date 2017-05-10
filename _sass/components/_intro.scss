@@ -1,0 +1,120 @@
+.intro-page {
+  height:100%;
+  width:100%;
+  position: fixed;
+  z-index:12;
+
+  background: hsl(200, 70, 11);
+  background-size: .12em 100%;
+  font-size: 16em;
+
+  .continue-section {
+    font-size: 0.1em;
+    color:$text-color;
+    position: absolute;
+    bottom:5%;
+    left:0;
+    right:0;
+    h4 {
+      padding: 0.5em 0;
+      position: relative;
+      font-size: 100%;
+      font-weight: bold;
+      font-size: 4vw;
+      margin-bottom: 1em;
+      top:0;
+      @include opacity(0);
+      @include animation(settle-in 0.4s 6s ease-out);
+      @include fill-mode(forwards);
+
+      text-transform: uppercase;
+      text-align: center;
+      background: rgba(255,255,255,0.7);
+      padding: 12px 12px 0px;
+    }
+  }
+  &.hide{
+    @include animation(scaleDown .7s ease both);
+  }
+  &.gone{
+    display: none;
+    visibility: hidden;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    @include opacity(0.95);
+    video {
+      /* Make video to at least 100% wide and tall */
+      min-width: 100%;
+      min-height: 100%;
+
+      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      width: auto;
+      height: auto;
+
+      /* Center the video */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    @media (max-width: $md) and (orientation: portrait){
+
+    }
+  }
+  &.show {
+    @include animation(moveFromTop .7s ease both);
+  }
+}
+
+
+@media (max-width: $lg) {
+  .intro-page {
+    .continue-section {
+      h4 {
+        font-size: 4vw;
+        padding: 0.7em;
+      }
+      .intro-continue-button {
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: $lg) and (orientation: landscape) {
+  .intro-page {
+    .video-container {
+      video {
+        width: 100vw;
+      }
+    }
+  }
+}
+$colors: $green,
+$primary,
+$pink,
+$blue;
+
+.intro-animating{
+  height: 100vh;
+  overflow: hidden;
+  &.popin{
+    z-index: 13;
+    @include animation(moveFromBottom .7s ease both);
+  }
+  &.hide{
+    @include animation(scaleDown .7s ease both);
+  }
+}
+
+

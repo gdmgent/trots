@@ -1,0 +1,588 @@
+.grid-container {
+  padding: 0px 40px;
+  z-index: 5;
+  background: white;
+  margin-bottom: 200px;
+  &.reached-bottom {
+    .grid-filters {
+      @include translate(0,-100%);
+      .line-marker {
+        bottom: inherit;
+        top: 0px;
+      }
+      .filter {
+        border-bottom: 3px solid transparent;
+      }
+      &-wrapper {
+        height: 100%;
+      }
+
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 350px;
+    &.reached-bottom {
+      .grid-filters {
+        @include translate(0,-200%);
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    &.reached-bottom {
+      .grid-filters {
+        @include translate(0,-250%);
+      }
+    }
+  }
+  .grid {
+    font-size:16px;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    &-filters {
+      position: relative;
+      padding: 0 150px;
+      @include opacity(0);
+      -webkit-pointer-events: none;
+      pointer-events: none;
+      &.show{
+        animation-name: fadeIn;
+        -webkit-animation-name: fadeIn;
+        animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        -webkit-animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+        animation-fill-mode: forwards;
+        -webkit-pointer-events: auto;
+        pointer-events: auto;
+      }
+      &-wrapper{
+        position: relative;
+      }
+      .filter {
+        cursor:pointer;
+        position: relative;
+        font-weight: 900;
+        width: 33.3333334%;
+        text-align: center;
+        font-weight: 400;
+        color: #BBBBBB;
+        @include transition(all 250ms ease-in-out);
+        padding: 10px 60px;
+        border-bottom:3px solid #BBBBBB;
+        &.active,
+        &:hover {
+          color: $blue;
+          //border-bottom:3px solid $blue;
+        }
+        &:nth-child(1).active ~ .line-marker{
+          left:0;
+        }
+        &:nth-child(2).active ~ .line-marker{
+          left: 33.3333334%;
+        }
+        &:nth-child(3).active ~ .line-marker{
+          left: 66.6666667%;
+        }
+        &:nth-child(1):hover ~ .line-marker{
+          left:0;
+        }
+        &:nth-child(2):hover ~ .line-marker{
+          left: 33.3333334%;
+        }
+        &:nth-child(3):hover ~ .line-marker{
+          left: 66.6666667%;
+        }
+
+        @media (max-width: $sm){
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+
+      }
+      .line-marker {
+        position: absolute;
+        height:3px;
+        bottom: 0px;
+        width: 33.3333334%;
+        background: $blue;
+        @include transition(all 250ms ease-in-out);
+      }
+      @media (max-width: $md){
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+      @media (max-width: $sm){
+        &-wrapper{
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+        }
+      }
+    }
+    &-filters-scroll{
+      height: 80px;
+      width: 100%;
+      padding-left: 150px;
+      padding-right: 150px;
+      position: fixed;
+      bottom: 0px;
+      left: 0;
+      z-index: 9;
+      background-color: #f4f4f4;
+      border-top: 1px solid $light-grey;
+      @media (max-width: $md){
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @media (max-width: $sm){
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+      @include transition(all 250ms cubic-bezier(0.860, 0.000, 0.070, 1.000));
+
+      .grid-filters-wrapper {
+        width: 100%;
+
+        &::after{
+          position: absolute;
+          left:-100px;
+          top: calc(50% - 14px);
+          content:"Filter";
+          font-weight: bold;
+          color: #BBBBBB;
+        }
+      }
+    }
+    &-item{
+      padding:3px;
+      margin: 9px 0;
+      position: relative;
+      @include opacity(0);
+      -webkit-pointer-events: none;
+      pointer-events: none;
+      //float: left;
+      @for $i from 1 through 5 {
+        $self: 20 * $i;
+        $grid-padding: 40;
+        &.grid-h-#{$i} {
+          height: calc((((100vw - #{$grid-padding * 2}px) / 5) * #{$i}) + #{18px * ($i - 1)});
+        }
+        &.grid-w-#{$i} {
+          width: percentage($self/100);
+          //font-size:percentage($self/100);
+        }
+      }
+      &.c-{
+        &1 .content {
+          color:$primary;
+          background: $primary;
+          &.text-block {
+            color:white;
+          }
+          .hover-content {
+            color:$primary;
+          }
+        }
+        &2 .content {
+          color:$blue;
+          background: $blue;
+          &.text-block {
+            color:white;
+          }
+          .hover-content {
+            color:$blue;
+          }
+        }
+        &3 .content {
+          color:$pink;
+          background: $pink;
+          &.text-block {
+            color:white;
+          }
+          .hover-content {
+            color:$pink;
+          }
+        }
+        &4 .content {
+          color:$green;
+          background: $green;
+          &.text-block {
+            color:white;
+          }
+          .hover-content {
+            color:$green;
+          }
+        }
+      }
+      &.loaded {
+        animation-name: fadeIn;
+        -webkit-animation-name: fadeIn;
+        animation-duration: 500ms;
+        -webkit-animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        -webkit-animation-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+        -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+        animation-fill-mode: forwards;
+        -webkit-pointer-events: auto;
+        pointer-events: auto;
+      }
+      &.filtered {
+        display: none;
+      }
+      .content {
+        background: $primary;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        &.text-block {
+          padding: 40px;
+        }
+        img {
+          max-width: 100%;
+          width: 100%;
+          height:100%;
+        }
+        .image {
+          position: absolute;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+          @include transition(all 200ms ease-in);
+        }
+        .hover-content {
+          position: absolute;
+          bottom:0;
+          text-align: left;
+          width: 100%;
+          height: 100%;
+          z-index: 4;
+          .hover-content-wrapper{
+            position: absolute;
+            bottom: -1px;
+            width: 100%;
+            overflow: hidden;
+          }
+          .hover-text-content {
+            z-index: 1;
+            position: relative;
+            text-align: left;
+            padding: 10px 17px;
+            background: white;
+            .hover-title {
+              position: relative;
+              display: block;
+              text-transform: uppercase;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+            .hover-subtitle {
+              position: relative;
+              display: block;
+              color: $text-color;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+          }
+          .hover-text-filler {
+            margin: 2px 0 0 5px;
+            background: white;
+            @include translate(0,50%);
+          }
+        }
+      }
+      &.c-{
+        &1 .content {
+          color:$primary;
+          background: $primary;
+          .hover-text-content {
+            color:$primary;
+            &::after{
+              background: $primary;
+            }
+          }
+        }
+        &2 .content {
+          color:$blue;
+          background: $blue;
+          .hover-text-content {
+            color:$blue;
+            &::after{
+              background: $blue;
+            }
+          }
+        }
+        &3 .content {
+          color:$pink;
+          background: $pink;
+          .hover-text-content {
+            color:$pink;
+            &::after{
+              background: $pink;
+            }
+          }
+        }
+        &4 .content {
+          color:$green;
+          background: $green;
+          .hover-text-content {
+            color:$green;
+            &::after{
+              background: $green;
+            }
+          }
+        }
+      }
+      @include on-event{
+        .image {
+          top:-10px;
+        }
+      }
+    }
+    &-sizer{
+      width: 20%;
+    }
+    @media (min-width: $xxl){
+      &-sizer{
+        width: 16.6667%;
+      }
+      &-item {
+        @for $i from 1 through 3 {
+          $self: 16.6667 * $i;
+          $grid-padding: 40;
+          &.grid-h-#{$i} {
+            height: calc((((100vw - #{$grid-padding * 2}px) / 6) * #{$i}) + #{18px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+      }
+    }
+    @media (max-width: $xl){
+      &-sizer{
+        width: 20%;
+      }
+      &-item {
+        @for $i from 1 through 3 {
+          $self: 20 * $i;
+          $grid-padding: 40;
+          &.grid-h-#{$i} {
+            height: calc((((100vw - #{$grid-padding * 2}px) / 5) * #{$i}) + #{18px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+      }
+    }
+    @media (max-width: $lg){
+      &-sizer{
+        width: 25%;
+      }
+      &-item {
+        @for $i from 1 through 3 {
+          $self: 25 * $i;
+          $grid-padding: 40;
+          &.grid-h-#{$i} {
+            height: calc((((100vw - #{$grid-padding * 2}px) / 4) * #{$i}) + #{18px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+      }
+    }
+    @media (max-width: $md){
+      &-sizer{
+        width: 33.333%;
+      }
+      &-item {
+        @for $i from 1 through 3 {
+          $self: 33.334 * $i;
+          $grid-padding: 25;
+          &.grid-h-#{$i} {
+            height: calc(#{$self}vw + #{18px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+      }
+    }
+    @media (max-width: $sm){
+      &-sizer{
+        width: 50%;
+      }
+      &-item {
+        @for $i from 1 through 3 {
+          $self: 50 * $i;
+          &.grid-h-#{$i} {
+            height: calc(#{$self}vw + #{18px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+        &.grid-w-3 {
+          width: 100%;
+          font-size:100%;
+          @for $i from 1 through 3 {
+            $self: 33.33334 * $i;
+            &.grid-h-#{$i} {
+              height: calc(#{$self}vw + #{18px * ($i - 1)});
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: $xsm){
+      &-sizer{
+        width: 100%;
+      }
+      &-item {
+        &.grid-w-1 {
+          width: 100%;
+          //font-size:100%;
+          @for $i from 1 through 3 {
+            $self: 100 * $i;
+            &.grid-h-#{$i} {
+              height: calc(#{$self}vw + #{18px * ($i - 1)});
+            }
+          }
+        }
+        &.grid-w-2 {
+          width: 100%;
+          //font-size:100%;
+          @for $i from 1 through 3 {
+            $self: 50 * $i;
+            &.grid-h-#{$i} {
+              height: calc(#{$self}vw + #{18px * ($i - 1)});
+            }
+          }
+        }
+        &.grid-w-3 {
+          width: 100%;
+          font-size:100%;
+          @for $i from 1 through 3 {
+            $self: 33.33334 * $i;
+            &.grid-h-#{$i} {
+              height: calc(#{$self}vw + #{18px * ($i - 1)});
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $md){
+    padding: 0;
+  }
+  &.extern {
+    padding: 40px 0 0;
+    margin-bottom: 0;
+    .grid{
+      padding: 0;
+      &-sizer{
+        width: 33.334%;
+      }
+      &-item {
+        margin: 0;
+        &.grid-h-a {
+          height: auto;
+          .image {
+            display: block;
+            position: relative;
+          }
+        }
+        @for $i from 1 through 3 {
+          $self: 33.333 * $i;
+          &.grid-h-#{$i} {
+            height: calc(#{$self - ($i * 11.111)}vw - #{6px * ($i - 1)});
+          }
+          &.grid-w-#{$i} {
+            width: percentage($self/100);
+            //font-size:percentage($self/100);
+          }
+        }
+        @include on-event{
+          .image {
+            top:0px;
+          }
+        }
+      }
+    }
+    @media (max-width: $lg){
+      .grid {
+        &-sizer{
+          width: 50%;
+        }
+        &-item {
+          @for $i from 1 through 3 {
+            $self: 50 * $i;
+            &.grid-h-#{$i} {
+              height: calc(#{33.3333 * $i}vw - #{9px * ($i - 1)});
+            }
+            &.grid-w-#{$i} {
+              width: percentage($self/100);
+              //font-size:percentage($self/100);
+              &.grid-m-f {
+                height: auto;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: $xsm){
+      .grid {
+        &-sizer{
+          width: 100%;
+        }
+        &-item {
+          @for $i from 1 through 3 {
+            $self: 100 * $i;
+            &.grid-h-#{$i} {
+              height: 66.666vw;
+              &.grid-m-f {
+                height: auto;
+              }
+            }
+            &.grid-w-#{$i} {
+              width: 100%;
+              //font-size:percentage($self/100);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-mobile="true"]{
+  .grid-container .grid-filters-scroll .filter.active{
+    &::after{
+      background-color: $blue;
+    }
+    &:hover{
+      &::after{
+        opacity:0.9;
+      }
+    }
+  }
+}

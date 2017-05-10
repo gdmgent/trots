@@ -1,0 +1,86 @@
+.bg {
+  position: fixed;
+  z-index: 1;
+  height:100%;
+  width: 100%;
+  padding: 20px 10px;
+  top:0;
+  left:0;
+  & ~ *{
+    z-index: 2;
+    position: relative;
+  }
+
+  .shapes{
+    position: absolute;
+    width: 50%;
+    height:100%;
+    top:0px;
+    left:0;
+    background: url("/assets/img/background/shapes.svg") no-repeat;
+
+    &:nth-child(1){
+    }
+    &:nth-child(2){
+      background: url("/assets/img/background/shapes2.svg") no-repeat;
+    }
+    @media (max-width: $md){
+      padding-top:40px;
+      width: 80%;
+    }
+    @media (max-width: $sm){
+      width: 70%;
+    }
+
+  }
+
+  &.animate{
+    .shapes {
+      &:nth-child(1){
+        @include animation(shape-movement-1 8s infinite);
+      }
+      &:nth-child(2){
+        background: url("/assets/img/background/shapes2.svg") no-repeat;
+        @include animation(shape-movement-2 8s 100ms infinite);
+      }
+    }
+  }
+
+  .content{
+    position: absolute;
+    width: calc(100% - 40px);
+    height:100%;
+    top:20px;
+    left:20px;
+    right:20px;
+    background: url(/assets/img/background/pattern-bg.png);
+  }
+
+  .fadeout{
+    height:100%;
+    bottom:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    background: -webkit-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 100%
+    );
+  }
+}

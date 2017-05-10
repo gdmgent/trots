@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  z-index: 3;
+  position: relative;
+  height:80px;
+  width: 100%;
+  background: $blue;
+  &.hidden {
+    display: none;
+  }
+  &.grid-footer {
+
+  }
+  > div {
+    width: 100%;
+    padding: 10px 28px;
+  }
+  .ahs__logo {
+    height: 100%;
+    margin-left: auto;
+    @include transition(all 250ms cubic-bezier(0.86, 0, 0.07, 1));
+    img {
+      height: 40px;
+      max-width: 100%;
+      display: block;
+    }
+    @include on-event{
+      filter:invert(1);
+    }
+  }
+  .ahs__footer-address,
+  .ahs__footer-contact{
+    padding: 0 40px;
+    p,a {
+      margin: 0;
+      font-size: 14px;
+      color:white;
+      font-weight: 400;
+    }
+    a {
+      display: block;
+      @include transition(all 250ms cubic-bezier(0.86, 0, 0.07, 1));
+      @include on-event{
+        color: $text-color;
+      }
+    }
+  }
+  @media screen and (max-width: $lg) {
+    > div {
+      height: auto;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      .ahs__logo {
+        padding: 10px;
+      }
+      .ahs__footer-address,
+      .ahs__footer-contact {
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        padding: 10px;
+      }
+    }
+    height: auto;
+  }
+}
+.grid-container {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 8;
+    @include opacity(0);
+    @include translate(0,100%);
+    @include transition(all 250ms cubic-bezier(0.86, 0, 0.07, 1));
+
+    @media (max-width: 700px) {
+      height: 160px;
+      > div > div {
+        width: 50%;
+        &.ahs__logo a{margin-left: auto;}
+      }
+    }
+    @media (max-width: $sm){
+      height: 200px;
+      > div > div {
+        width: initial;
+        &.ahs__logo a{margin-left: 0;}
+      }
+    }
+  }
+  &.reached-bottom {
+    .footer {
+      @include opacity(1);
+      @include translate(0,0);
+      @include translate(0,0);
+    }
+  }
+}
