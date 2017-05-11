@@ -1,0 +1,15 @@
+---
+---
+[
+  {% assign projects = site.projects %}
+  {% for project in projects %}
+    {
+      "id": "{{ project.url | slugify }}",
+      "url": "{{ project.url | prepend: site.baseurl | prepend: site.url }}", 
+      "title": "{{ project.title | escape }}",
+      "slug": "{{ project.slug | escape }}",
+      "description": "{{ project.description | escape }}",
+      "thumbnail": "{{ project.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: '/assets/img/projects/' | prepend: site.baseurl | prepend: site.url }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
