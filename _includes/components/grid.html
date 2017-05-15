@@ -23,8 +23,9 @@
                     color:#{{project.thumbnail.text-color}}
                 }
                 </style>
-                <img data-src="/assets/img/projects/{{ project.slug }}/{{ project.thumbnail.url }}" class="image" alt="{{ project.title }}"/>
-                <a href="{{ project.url }}" class="hover-content flex justified-end column">
+                {% capture imgUrl %}{{ project.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: '/assets/img/projects/' | prepend: site.baseurl }}{% endcapture %}
+                <img data-src="{{ imgUrl }}" class="image" alt="{{ project.title }}"/>
+                <a href="{{ project.url | prepend: site.baseurl }}" class="hover-content flex justified-end column">
                     <div class="hover-content-wrapper flex">
                         <div class="hover-text-content">
                             {% for member in project.members limit:1 %}
