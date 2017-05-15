@@ -10,7 +10,7 @@
       "title": "{{ story.title | escape }}",
       "title_long": "{{ story.title | escape }}",
       "description": "{{ story.description | escape }}",
-      "thumbnail_url": "{{ story.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: '/assets/stories' | prepend: site.baseurl | prepend: site.url }}",
+      "thumbnail_url": "{{ story.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: '/assets/img/stories' | prepend: site.baseurl | prepend: site.url }}",
       "content": {{ story.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | jsonify }},
       "slug": "{{ story.slug | escape }}",
       "intro": {
