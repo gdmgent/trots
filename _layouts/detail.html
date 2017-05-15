@@ -12,6 +12,7 @@
             {% for mediaobject in page.media %}
             <div class="detail-item-container">
                 {% if mediaobject.type == "image" %}
+                {% capture imgUrl %}{{ mediaobject.url | prepend: '/' | prepend: page.slug | prepend: '/assets/img/projects/' | prepend: site.baseurl }}{% endcapture %}
                     <picture>
                         <!--<source
                                 media="(max-width: 480px)"
@@ -19,7 +20,7 @@
                         <!--<source
                                 media="(max-width: 680px)"
                                 srcset="/assets/img/projects/{{ page.slug }}/{{ mediaobject.url | replace:'/','/md/' }}">-->
-                        <img src="/assets/img/projects/{{ page.slug }}/{{ mediaobject.url }}" alt="{{ mediaobject.text }}">
+                        <img src="{{ imgUrl }}" alt="{{ mediaobject.text }}">
                     </picture>
                 {% else if mediaobject.type == "vimeo" %}
                     <div class='video-container'>
