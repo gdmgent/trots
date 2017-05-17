@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html>
-{% assign thumb = "/assets/img/projects/" | append: {{page.thumbnail.url}}%}
+<!DOCTYPE html SYSTEM "about:legacy-compat"> 
+<html dir="ltr" lang="nl-be" class="no-js" prefix="og: http://ogp.me/ns#">
+{% capture thumb %}{{ page.thumbnail.url | prepend: '/' | prepend: page.slug | prepend: '/assets/img/projects/' }}{% endcapture %}
 {% include components/head.html %}
 <body class="flex column" data-mobile>
 {% include components/header.html %}

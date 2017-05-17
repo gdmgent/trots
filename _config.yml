@@ -9,12 +9,12 @@ port        : 4000
 # SEO
 # ---
 title      : 'Online portfolio GDM'
-domain     : 'Grafische en Digitale Media'
 subdomain  : 'TROTS'
+domain     : 'Grafische en Digitale Media'
 description : "This is an assignment for Artevelde University College Ghent."
+keywords    : 'portfolio, stories, grafische, digitale, media, gdm, arteveldehogeschool'
 author      : 'Bachelor of Graphical and Digital Media | Artevelde University College Ghent'
 copyright   : 'Copyright 2010-16 Artevelde University College Ghent. All Rights Reserved.'
-keywords    : 'portfolio, stories, grafische, digitale, media, gdm, arteveldehogeschool'
 
 # Tracking Services
 # ---------------

@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html SYSTEM "about:legacy-compat"> 
+<html dir="ltr" lang="nl-be" class="no-js" prefix="og: http://ogp.me/ns#">
+{% capture thumb %}{{ page.thumbnail.url | prepend: '/' | prepend: page.slug | prepend: '/assets/img/stories/' }}{% endcapture %}
 {% include components/story/head.html %}
 <body class="flex column" data-mobile>
 <div class="reveal">
