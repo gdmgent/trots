@@ -8,7 +8,7 @@
       "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}", 
       "title": "{{ post.title | escape }}",
       "title_long": "{{ post.subtitle | escape }}",
-      "description": "{{ post.subtitle | escape }}",
+      "description": "{{ post.description | escape }}",
       "button": "{{ post.button | escape }}",
       "uri": "{{ post.uri | prepend: site.baseurl | prepend: site.url }}", 
       "order": "{{ post.order }}",
