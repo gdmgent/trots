@@ -44,7 +44,7 @@
             </div>
             -->
             <div class="nav-block">
-                <a class='big-block {% if page.url == "/" %}active{% endif %}' href="{{ '/' | prepend: site.baseurl }}">
+                <a class='big-block {% if page.url == "/" %}active{% endif %}' href="{{ '/' | relative_url }}">
                     <h3 class="ahs__title nav-title md  black" data-letters="Portfolio">
                         Portfolio
                         <span data-letters="Portfolio"></span>
@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div class="nav-block">
-                <a class='big-block {% if page.url == "/stories/" %}active{% endif %}' href="{{ '/stories/' | prepend: site.baseurl }}">
+                <a class='big-block {% if page.url == "/stories/" %}active{% endif %}' href="{{ 'stories' | relative_url }}">
                     <h3 class="ahs__title nav-title md  black" data-letters="GDM Stories">
                         GDM Stories
                         <span data-letters="GDM Stories"></span>
@@ -60,7 +60,7 @@
                 </a>
             </div>
             <div class="nav-block">
-                <a class='big-block {% if page.url == "/externeprojecten/" %}active{% endif %}' href="{{ '/externeprojecten/' | prepend: site.baseurl }}">
+                <a class='big-block {% if page.url == "/externeprojecten/" %}active{% endif %}' href="{{ 'externeprojecten' | relative_url }}">
                     <h3 class="ahs__title nav-title md black" data-letters="Externe Projecten">
                         Externe Projecten
                         <span data-letters="Externe Projecten"></span>
@@ -68,7 +68,7 @@
                 </a>
             </div>
             <div class="nav-block">
-                <a class='big-block {% if page.url == "/contact/" %}active{% endif %}' href="{{ '/contact/' | prepend: site.baseurl }}">
+                <a class='big-block {% if page.url == "/contact/" %}active{% endif %}' href="{{ 'contact' | relative_url }}">
                     <h3 class="ahs__title nav-title md black" data-letters="Contact">
                         Contact
                         <span data-letters="Contact"></span>

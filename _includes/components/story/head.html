@@ -44,19 +44,19 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page_title }} | {{ page_subdomain }} | {{ page_domain }}">
     <meta property="og:description" content="{{ page_description }}">
-    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     {% if thumb %}
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ thumb }}">
     {% else %}
-    <meta property="og:image" content="{{ '/assets/img/ahs.png' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{{ 'assets/img/ahs.png' | absolute_url }}">
     <meta property="og:image:width" content="129">
     <meta property="og:image:height" content="129">
     {% endif %}
     <!-- humans.txt -->
-    <link rel="author" type="text/plain" href="{{ '/humans.txt' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="author" type="text/plain" href="{{ 'humans.txt' | absolute_url }}">
     <!-- Icons -->
-    {% capture assetsIconsFolder %}{{ '/assets/img/favicons/' | prepend: site.baseurl }}{% endcapture %}
+    {% capture assetsIconsFolder %}{{ 'assets/img/favicons/' | relative_url }}{% endcapture %}
     <!-- http://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ assetsIconsFolder }}apple-touch-icon.png">
     <link rel="icon" type="image/png" href="{{ assetsIconsFolder }}favicon-32x32.png" sizes="32x32">
@@ -73,6 +73,6 @@
     <link rel="dns-prefetch" href="//code.jquery.com">
     <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ '/css/reveal.css' | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ '/css/story.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ 'css/reveal.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'css/story.css' | relative_url }}">
 </head>
