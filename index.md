@@ -1,6 +1,6 @@
 ---
-layout  : default
-title   : "Online portfolio GDM"
+layout     : default
+title      : "Online portfolio GDM"
 description: "Arteveldehogeschool stelt met trots het portfolio van haar richting Grafische Digitale Media voor aan iedereen. Neem een kijk hoe onze studenten te werk gaan en creative werken van begin tot einde ontwikkelen."
 ---
 {% include components/bg.html %}
@@ -12,7 +12,7 @@ description: "Arteveldehogeschool stelt met trots het portfolio van haar richtin
                     <h4>Sick Vid!</h4>
                     <span>Dat wil ik wel nog eens zien!</span>
                 </div>
-                <img src="{{ '/assets/img/icons/arrow-pink.svg' | prepend: site.baseurl }}" />
+                <img src="{{ 'assets/img/icons/arrow-pink.svg' | relative_url }}" />
             </div>
             <h1 class="ahs__title bold xl padded-top-xxl padded-bottom-xl show-edge">
                 <span class="blue">Grafische &amp; Digitale</span> Media
@@ -52,7 +52,7 @@ description: "Arteveldehogeschool stelt met trots het portfolio van haar richtin
             <div class="tease hide-xsm hide-xxsm">
                 <h4>Check dat af!</h4>
                 <span>Een aantal samples van studentenwerk</span>
-                <img src="{{ '/assets/img/icons/arrow-green.svg' | prepend: site.baseurl }}" />
+                <img src="{{ 'assets/img/icons/arrow-green.svg' | relative_url }}" />
             </div>
         </div>
     </div>

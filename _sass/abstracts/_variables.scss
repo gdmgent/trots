@@ -63,13 +63,13 @@ $default-font-size: 16;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 
-$xxsm  : 0/$default-font-size * 1rem;
-$xsm   : 320/$default-font-size * 1rem;
-$sm    : 480/$default-font-size * 1rem;
-$md    : 680/$default-font-size * 1rem;
-$lg    : 960/$default-font-size * 1rem;
-$xl   : 1140/$default-font-size * 1rem;
-$xxl  : 1440/$default-font-size * 1rem;
+$xxsm:    0/$default-font-size * 1rem;
+$xsm :  320/$default-font-size * 1rem;
+$sm  :  480/$default-font-size * 1rem;
+$md  :  680/$default-font-size * 1rem;
+$lg  :  960/$default-font-size * 1rem;
+$xl  : 1140/$default-font-size * 1rem;
+$xxl : 1440/$default-font-size * 1rem;
 
 
 /// Grid Prefixes map

@@ -1,0 +1,19 @@
+---
+---
+[
+  {% assign posts = site.news %}
+  {% for post in posts %}
+    {
+      "id": "{{ post.url | slugify }}",
+      "url": "{{ post.url | absolute_url }}", 
+      "title": "{{ post.title | escape }}",
+      "title_long": "{{ post.subtitle | escape }}",
+      "description": "{{ post.description | escape }}",
+      "button": "{{ post.button | escape }}",
+      "uri": "{{ post.uri | absolute_url }}", 
+      "order": "{{ post.order }}",
+      "active": "{{ post.active }}",
+      "content": {{ post.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

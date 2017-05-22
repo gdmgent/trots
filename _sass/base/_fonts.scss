@@ -4,9 +4,9 @@
 
 @import "vendor/font-awesome/scss/font-awesome";
 
-$font-path-neo: "../assets/fonts/neosans/" !default;
-$font-path-neo-pro: "../assets/fonts/neosans-pro/" !default;
-$font-path-scriptorama: "../assets/fonts/scriptorama/" !default;
+$font-path-neo        : "../fonts/neosans/" !default;
+$font-path-neo-pro    : "../fonts/neosans-pro/" !default;
+$font-path-scriptorama: "../fonts/scriptorama/" !default;
 
 @font-face {
   font-family: 'Neo Sans Pro';

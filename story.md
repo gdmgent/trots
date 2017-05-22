@@ -1,5 +1,5 @@
 ---
-layout  : story
-title   : "Story"
+layout     : story
+title      : Story
 description: ""
 ---

@@ -4,16 +4,16 @@
         <i class="fa fa-share-alt"></i>
     </span>
     <div class="share-list flex row justified-c centered">
-        <a onclick="scroll_element_thumb_click(event); return false;" href='https://www.facebook.com/sharer/sharer.php?u={{site.url | replace: "http://", "" | replace: "https://", "" }}{{page.url | prepend: site.baseurl }}' class="share-link facebook">
+        <a onclick="scroll_element_thumb_click(event); return false;" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | remove: 'http://' | remove: 'https://' }}" class="share-link facebook">
             <i class="fa fa-facebook-f"></i>
         </a>
-        <a onclick="scroll_element_thumb_click(event); return false;" href="https://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url | prepend: site.baseurl }}&title={{ site.title }}%20%7C%20{{ page.title }}" class="share-link linkedin">
+        <a onclick="scroll_element_thumb_click(event); return false;" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ site.title }}%20%7C%20{{ page.title }}" class="share-link linkedin">
             <i class="fa fa-linkedin"></i>
         </a>
-        <a onclick="scroll_element_thumb_click(event); return false;" href='https://pinterest.com/pin/create/button/?url={{site.url}}{{page.url | prepend: site.baseurl }}&media={{site.url}}{{thumb}}' class="share-link pintrest">
+        <a onclick="scroll_element_thumb_click(event); return false;" href="https://pinterest.com/pin/create/button/?url={{ page.url | absolute_url }}&media={{site.url}}{{thumb}}" class="share-link pintrest">
             <i class="fa fa-pinterest-p"></i>
         </a>
-        <a onclick="scroll_element_thumb_click(event); return false;" href='https://twitter.com/home?status=Check%20out%20{{site.url | replace: "http://", "" | replace: "https://", "" }}{{page.url | prepend: site.baseurl }}' class="share-link twitter">
+        <a onclick="scroll_element_thumb_click(event); return false;" href="https://twitter.com/home?status=Check%20out%20{{ page.url | absolute_url | remove: 'http://' | remove: 'https://' }}" class="share-link twitter">
             <i class="fa fa-twitter"></i>
         </a>
     </div>

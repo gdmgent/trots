@@ -1,7 +1,7 @@
 ---
-layout  : default
-title   : "GDM Stories"
-description: "Ontdek de vele verhalen die onze student van Grafische Digitale Media te vertellen hebben. Ervaar GDM."
+layout     : default
+title      : GDM Stories
+description: Ontdek de vele verhalen die onze student van Grafische Digitale Media te vertellen hebben. Ervaar GDM.
 ---
 <div class="container flex column">
     {% include components/bg.html %}

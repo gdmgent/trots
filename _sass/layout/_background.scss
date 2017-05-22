@@ -17,12 +17,12 @@
     height:100%;
     top:0px;
     left:0;
-    background: url("/assets/img/background/shapes.svg") no-repeat;
+    background: url("../img/background/shapes.svg") no-repeat;
 
     &:nth-child(1){
     }
     &:nth-child(2){
-      background: url("/assets/img/background/shapes2.svg") no-repeat;
+      background: url("../img/background/shapes2.svg") no-repeat;
     }
     @media (max-width: $md){
       padding-top:40px;
@@ -40,7 +40,7 @@
         @include animation(shape-movement-1 8s infinite);
       }
       &:nth-child(2){
-        background: url("/assets/img/background/shapes2.svg") no-repeat;
+        background: url("../img/background/shapes2.svg") no-repeat;
         @include animation(shape-movement-2 8s 100ms infinite);
       }
     }
@@ -53,7 +53,7 @@
     top:20px;
     left:20px;
     right:20px;
-    background: url("/assets/img/background/pattern-bg.png");
+    background: url("../img/background/pattern-bg.png");
   }
 
   .fadeout{
