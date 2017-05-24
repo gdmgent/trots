@@ -1,5 +1,4 @@
 ---
-permalink: /api.stories.json
 ---
 [
   {% assign stories = site.stories %}

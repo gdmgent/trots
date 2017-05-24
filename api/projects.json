@@ -1,5 +1,4 @@
 ---
-permalink: /api.projects.json
 ---
 [
   {% assign projects = site.projects %}

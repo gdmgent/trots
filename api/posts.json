@@ -1,5 +1,4 @@
 ---
-permalink: /api.posts.json
 ---
 [
   {% assign posts = site.posts %}
