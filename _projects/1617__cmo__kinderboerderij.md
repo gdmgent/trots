@@ -1,7 +1,7 @@
 ---
 title: Kinderboerderij
 slug: "kinderboerderij"
-description: "Als eindwerk voor de tweede schijf ontwikkelden de studenten Graphic Design een huisstijl voor een lokale kinderboerderij.<br><br>Jules Van Rijsselberge ontwierp een sterk, uitgepuurd logo. Een functioneel uithangbord voor de organisatie. Hij combineert in zijn ontwerp een strakke vormgeving met een spontane, kindvriendelijke illustratiestijl gebaseerd op een digitale wasco-techniek"
+description: "Als eindwerk voor de tweede schijf ontwikkelden de studenten Graphic Design een huisstijl voor een lokale kinderboerderij.<br><br>Jules Van Rijsselberge ontwierp een sterk, uitgepuurd logo. Een functioneel uithangbord voor de organisatie. Hij combineert in zijn ontwerp een strakke vormgeving met een spontane, kindvriendelijke illustratiestijl gebaseerd op een digitale wasco-techniek."
 type: "intern"
 members:
     - name: "Jules Van Rijsselberge"
