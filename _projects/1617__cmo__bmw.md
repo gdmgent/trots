@@ -1,11 +1,11 @@
 ---
 title: "Didactische Plaat BMW"
 slug: "bmw"
-description: De opdracht hield in dat er een banner voor de Facebook groep van de klas moest worden gemaakt.
+description: "Ontwerp van een didactische plaat over een 'classic car'."
 type: "intern"
 members:
-    - name: "Jonas Dermul"
-      direction: "Cross-Media Ontwerp"
+    - name: "Niels Dewelde"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
       disk: "2e Schijf"
 thumbnail:
@@ -18,9 +18,10 @@ thumbnail:
 media:
     - url: "1.visual.png"
       type: "image"
-      text: "Started with an idea, worked out a sketch and digitalized it."
+      text: "Detail van de wagen. Alle elementen in dit ontwerp zijn getekend met Adobe Illustrator."
     - url: "2.poster.png"
       type: "image"
+      text: "Afgewerkte poster"
 created: 20/01/2017
 order: 2
 ---
