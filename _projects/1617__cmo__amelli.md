@@ -1,7 +1,7 @@
 ---
 title: Melk Campagne 
 slug: "milk"
-description: "Opdracht: Bedenkt een nieuwe merknaam en ontwerp de verpakkingen voor 3 soorten melk. Vol, halfvol en melk met een speciaal smaakje. Er werd een huisstijl uitgewerkt die de grafische basis vormde voor een bijhorende reclamecampagne." 
+description: "Opdracht: bedenkt een nieuwe merknaam en ontwerp de verpakkingen voor 3 soorten melk. Vol, halfvol en melk met een speciaal smaakje. Er werd een huisstijl uitgewerkt die de grafische basis vormde voor een bijhorende reclamecampagne." 
 type: "intern"
 members:
     - name: "Shauny Eloot"
