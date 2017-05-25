@@ -26,8 +26,7 @@ media:
       text: "Digitaal uitgewerkte illustraties"
     - url: "5.schetsposter.jpg"
       type: "image"
-    - url: "6.poster.jpg"
-      type: "image"
+      text: "Van ideeschets naar uitgewerkte versie"
 created: 20/01/2017
 order: 1
 ---
