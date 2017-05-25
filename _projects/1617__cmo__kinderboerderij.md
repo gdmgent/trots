@@ -14,7 +14,7 @@ thumbnail:
     height: 1
     width: 1
     text-color: "b20112"
-    background-color: "b20112"
+    background-color: "fff"
 media:
     - url: "1.logo.jpg"
       type: "image"

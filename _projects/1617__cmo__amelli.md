@@ -14,7 +14,7 @@ thumbnail:
     height: 1
     width: 1
     text-color: "b96528"
-    background-color: "b96528"
+    background-color: "fcc553"
 media:
     - url: "1_logoevolutie.png"
       type: "image"
