@@ -1,7 +1,7 @@
 ---
-title: "Didactische Plaat BMW"
+title: "Didactische plaat"
 slug: "bmw"
-description: "Ontwerp van een didactische plaat over een 'classic car'."
+description: "Ontwerp van een didactische plaat met als onderwerp 'classic cars'."
 type: "intern"
 members:
     - name: "Niels Dewelde"

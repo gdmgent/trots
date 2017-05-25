@@ -1,11 +1,11 @@
 ---
-title: "Dagboek Notities"
-slug: "dagboek-notities"
-description: ""
+title: "Dagboeknotities"
+slug: "dagboeknotities"
+description: "In deze opdracht staat de verwondering centraal. In de briefing staat: 'laat je verwonderen door de kleine dingen en gebeurtenissen rond je. Kijk door een lens zoals een kind en ontdek de wereld om je heen'"
 type: "intern"
 members:
     - name: "Gert-Jan De Baets"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Photo Design"
       disk: "2e Schijf"
 thumbnail:
