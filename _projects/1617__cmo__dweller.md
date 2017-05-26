@@ -1,20 +1,13 @@
 ---
 title: "Space Dweller"
 slug: "dweller"
-description: "Als een van de opdrachten in de
-              tweede schijf, moesten de studenten
-              een campagne maken.<br><br>
-              Jonas heeft er voor gekozen om
-              een campagne over een ruimtereis
-              te maken. Dit is inclusief een
-              logo, poster, buswrap en noem
-              maar op."
+description: "'Stel je voor dat een reis naar de planeet Mars niet veel meer om het lijf zou hebben dan een intercontinentale vlucht zoals we die nu al op aarde kennen. Hoe zou je deze reis dan promoten?'"
 type: "intern"
 members:
     - name: "Jonas Dermul"
       direction: "Cross-Media Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "Schijf 2"
 thumbnail:
     url: "thumbnail.jpg"
     alt: ""
@@ -27,22 +20,17 @@ media:
       type: "image"
     - url: "balk-logo2.png"
       type: "image"
-      text: "De campagne begint met het ontwerpen van een logo. Er moet een evenwicht bestaan tussen het beeld en
-             de tekst. Ook bezit het logo over enkele krachtlijnen."
+      text: "De campagne vertrekt vanuit het ontwerp van het logo. Een goed logo is eenvoudig te reproduceren en in dit geval moest er goed gelet worden op een evenwicht tussen het woordmerk en het beeldmerk of symbool"
     - url: "balk-visual-poster.png"
       type: "image"
-      text: "De klant vroeg om een poster te maken voor de campagne. Hiervoor is een visual gemaakt om als blikvanger te
-             gebruiken. Zo wordt de aandacht van de voorbijganger getrokken."
+      text: "Voor de poster werd een opvallende visual ontworpen om als blikvanger te gebruiken."
     - url: "balk-poster.png"
       type: "image"
-      text: "De poster is een evenwchtige combinatie van tekst en beeld. Er is een beperkt kleurenpalet gebruikt dat
-             doorheen heel de campagne van toepassing is."
+      text: "Het goed afgewogen en bewust beperkt gehouden kleurenpalet zorgt voor visuele binding tussen alle elementen in de campagne"
     - url: "balk-visual-buswrap.png"
       type: "image"
-      text: "De klant vroeg om een poster te maken voor de campagne. Hiervoor is een visual gemaakt om als blikvanger te
-             gebruiken. Zo wordt de aandacht van de voorbijganger getrokken."
     - url: "balk-buswrap.png"
       type: "image"
 created: 20/01/2017
-order: 22
+order: 11
 ---

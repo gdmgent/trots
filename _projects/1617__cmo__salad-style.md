@@ -14,7 +14,7 @@ thumbnail:
     height: 1
     width: 1
     text-color: "9cd380"
-    background-color: "9cd380"
+    background-color: "fff"
 media:
     - url: "1.salad.jpg"
       type: "image"
