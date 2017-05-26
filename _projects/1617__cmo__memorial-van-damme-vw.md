@@ -1,7 +1,7 @@
 ---
 title: Memorial Van Damme 40ste Editie
 slug: "memorial-van-damme-wv"
-description: ""
+description: "De studenten 2CMO namen in 2016 deel aan de wedstrijd die op zoek gaat naar het campagnebeeld voor de 40ste editie van de Memorial Van Damme"
 type: "extern"
 members:
     - name: "Wannes Vansteenhuyse"
@@ -16,8 +16,6 @@ thumbnail:
     text-color: "d9681c"
     background-color: "d9681c"
 media:
-    - url: "1.visual.png"
-      type: "image"
     - url: "2.poster.jpg"
       type: "image"
 created: 20/01/2017

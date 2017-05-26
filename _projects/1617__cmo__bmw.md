@@ -14,7 +14,7 @@ thumbnail:
     height: 1
     width: 1
     text-color: "344072"
-    background-color: "344072"
+    background-color: "0a0b0e"
 media:
     - url: "1.visual.png"
       type: "image"

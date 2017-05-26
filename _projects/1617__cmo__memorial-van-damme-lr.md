@@ -1,7 +1,7 @@
 ---
-title: Memorial Van Damme 40ste Editie
+title: Memorial Van Damme poste
 slug: "memorial-van-damme-lr"
-description: ""
+description: "De studenten 2CMO namen deel aan de wedstrijd die op zoek gaat naar het campagnebeeld voor de 40ste editie van de Memorial Van Damme"
 type: "extern"
 members:
     - name: "Linde Raats"
@@ -12,9 +12,9 @@ thumbnail:
     url: "thumb.jpg"
     alt: ""
     height: 1
-    width: 2
-    text-color: "055b92"
-    background-color: "055b92"
+    width: 1
+    text-color: "f2950b"
+    background-color: "f2950b"
 media:
     - url: "1.memorial.png"
       type: "image"
