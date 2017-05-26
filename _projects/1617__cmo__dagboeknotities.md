@@ -48,8 +48,6 @@ media:
       type: "image"
     - url: "16.png"
       type: "image"
-    - url: "16.png"
-      type: "image"
     - url: "17.png"
       type: "image"
     - url: "18.png"
