@@ -371,7 +371,7 @@ ready(function(){
                     var contentString = '<div class="map-marker-info">' +
                         '<h4>Arteveldehogeschool Campus Mariakerke</h4>'+
                         '<p>Industrieweg 232 - 9030 Gent<br>Belgie '+
-                        '<br>T. +32(0)9 234 86 00'+
+                        '<br>T. +32 (0)9 234 86 00'+
                         '</p>'+
                         ''+
                         '</div>';

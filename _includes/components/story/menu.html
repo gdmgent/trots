@@ -6,7 +6,7 @@
             <span class="line"></span>
         </button>
         <a class="overview-toggle flex justified-c centered wrap active visible"
-           href="https://artevelde-trots.github.io/stories">
+           href="http://www.gdm.gent/trots/stories/">
             <div class="cube-row flex">
                 <div class="cube"></div>
                 <div class="cube"></div>
@@ -23,8 +23,7 @@
                 <div class="cube"></div>
             </div>
         </a>
-        <img class="fullscreen" src="../../assets/stories/intro/buttons/fullscreen.svg">
-
+        <img class="fullscreen" src="{{ 'assets/stories/intro/buttons/fullscreen.svg' | relative_url }}">
         <div class="share-container">
             <span class="share-toggle ahs__title xsm">
                 <i class="fa fa-share-alt"></i>
@@ -47,11 +46,10 @@
     </div>
     <div class="overflow">
         <div class="menu-items">
-            {% assign sections = page.sections %}
-            {% for section in sections %}
+            {% assign sections = page.sections %}{% for section in sections %}
                 <div class="nav-item">
                     <a href="#">
-                        <img src="../../assets/stories/{{page.slug}}/thumb/{{section.thumb}}">
+                        <img src="{{ 'assets/stories/' | relative_url }}{{ page.slug }}/thumb/{{ section.thumb }}">
                     </a>
                 </div>
             {% endfor %}

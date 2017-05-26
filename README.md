@@ -1,21 +1,21 @@
-# Artevelde-Trots.github.io
+T.R.O.T.S
+=========
 
-## Extern Project
+Installation
+------------
 
-### 2016 - 2017
+```
+$ brew install ruby
+$ gem install bundler
+$ git clone https://github.com/gdmgent/trots
+$ cd trots
+$ bundle install
+$ bundle update
+$ bundle exec jekyll serve
+```
 
-Opdracht TROTS
+Open
+----
 
-## Installation
-
-* Clone Repository
-* Install Jekyll
-* gem install jekyll bundler
-* Change directory to project folder
-* cd Artevelde-Trots.github.io
-* bundle install
-* This installs all the dependencies and such
-* bundle exec jekyll serve
-
-### => Now browse to http://127.0.0.1:4000
-
+ - Local: <http://127.0.0.1:4000/trots/>
+ - Online: <http://trots.gdm.gent>

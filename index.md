@@ -1,7 +1,7 @@
 ---
 layout     : default
-title      : "Online portfolio GDM"
-description: "Arteveldehogeschool stelt met trots het portfolio van haar richting Grafische Digitale Media voor aan iedereen. Neem een kijk hoe onze studenten te werk gaan en creative werken van begin tot einde ontwikkelen."
+title      : Online portfolio GDM
+description: Arteveldehogeschool stelt met trots het portfolio van haar richting Grafische Digitale Media voor aan iedereen. Neem een kijk hoe onze studenten te werk gaan en creative werken van begin tot einde ontwikkelen.
 ---
 {% include components/bg.html %}
 <div class="container flex home">
@@ -44,9 +44,7 @@ description: "Arteveldehogeschool stelt met trots het portfolio van haar richtin
         </div>
         <div class="ahs__paragraph pos-rel intro-container flex news-active">
             <div class="intro flex-child stretch">
-                <p>
-                    Grafische communicatie gebeurt via een pijlsnel groeiende waaier aan kanalen in een wereld waar de grens tussen pixels en rasterpunten steeds vager wordt. Op de media campus leiden we professionals op in (photo-)graphic design, code, motiongraphics of video. Voor de commerciële breinen achter de creativiteit ontwikkelden we de richting ‘Grafimediabeleid’.    
-                </p>
+                <p>Grafische communicatie gebeurt via een pijlsnel groeiende waaier aan kanalen in een wereld waar de grens tussen pixels en rasterpunten steeds vager wordt. Op de media campus leiden we professionals op in (photo-)graphic design, code, motiongraphics of video. Voor de commerciële breinen achter de creativiteit ontwikkelden we de richting ‘Grafimediabeleid’.</p>
             </div>
             {% include components/news.html %}
             <div class="tease hide-xsm hide-xxsm">

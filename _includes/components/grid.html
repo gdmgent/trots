@@ -11,17 +11,17 @@
     {% include components/footer.html %}
     <div class="grid row">
         <div class="grid-sizer"></div>
-        {% assign projects = site.projects | sort:'order' %}
+        {% assign projects = site.projects | sort: 'order' %}
         {% for project in projects %}
-        <div id="grid-item-{{project.slug}}" class="grid-item grid-w-{{project.thumbnail.width}} grid-h-{{project.thumbnail.height}} c-{{project.thumbnail.color}}" data-type="{{ project.type }}">
+        <div id="grid-item-{{project.slug}}" class="grid-item grid-w-{{ project.thumbnail.width }} grid-h-{{ project.thumbnail.height }} c-{{ project.thumbnail.color }}" data-type="{{ project.type }}">
             <div class="content">
                 <style>
-                #grid-item-{{project.slug}} .content{
-                    background-color:#{{project.thumbnail.background-color}}
-                }
-                #grid-item-{{project.slug}} .hover-title {
-                    color:#{{project.thumbnail.text-color}}
-                }
+                    #grid-item-{{ project.slug }} .content{
+                        background-color:#{{ project.thumbnail.background-color }}
+                    }
+                    #grid-item-{{ project.slug }} .hover-title {
+                        color:#{{ project.thumbnail.text-color }}
+                    }
                 </style>
                 {% capture imgUrl %}{{ project.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: '/assets/img/projects/' | prepend: site.baseurl }}{% endcapture %}
                 <img data-src="{{ imgUrl }}" class="image" alt="{{ project.title }}"/>

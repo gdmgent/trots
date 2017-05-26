@@ -38,10 +38,11 @@
 
             <div class="nav-block">
                 <div class="big-block flex maxed">
-                    <a class='{% if page.url == "/" %}active{% endif %}'  href="/">Home</a>
+                    <a class='{% if page.url == "/" %}active{% endif %}' href="/">Home</a>
                     <a class='{% if page.url == "/contact/" %}active{% endif %}' href="/contact">Contact</a>
                 </div>
             </div>
+
             -->
             <div class="nav-block">
                 <a class='big-block {% if page.url == "/" %}active{% endif %}' href="{{ '/' | relative_url }}">

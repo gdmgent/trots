@@ -9,10 +9,10 @@
         </div>
     </div>
     <div class="video-container">
-        <video preload="true" loop muted autoplay poster="{{ '/assets/video/landingpage.png' | prepend: site.baseurl }}" class="fullscreen-bg__video">
-            <source src="{{ '/assets/video/landingpage.webm' | prepend: site.baseurl }}" type="video/webm">
-            <source src="{{ '/assets/video/landingpage.mp4' | prepend: site.baseurl }}" type="video/mp4">
-            <source src="{{ '/assets/video/landingpage.ogv' | prepend: site.baseurl }}" type="video/ogg">
+        <video preload="true" loop muted autoplay poster="{{ 'assets/video/landingpage.png' | relative_url }}" class="fullscreen-bg__video">
+            <source src="{{ 'assets/video/landingpage.webm' | relative_url }}" type="video/webm">
+            <source src="{{ 'assets/video/landingpage.mp4' | relative_url }}" type="video/mp4">
+            <source src="{{ 'assets/video/landingpage.ogv' | relative_url }}" type="video/ogg">
         </video>
     </div>
 </div>
