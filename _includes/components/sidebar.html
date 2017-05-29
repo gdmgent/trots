@@ -7,7 +7,7 @@
 
         <blockquote>
         {% for member in page.members %}
-            {% assign memberIndex = {{forloop.index}} %}
+            {% assign memberIndex = {{ forloop.index }} %}
             {% if member.name %}
                 <span>{{member.name}}</span>
             {% endif %}

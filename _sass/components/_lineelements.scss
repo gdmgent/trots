@@ -7,9 +7,9 @@
 .menu-toggle {
   height: 60px;
   width: 60px;
-  position: fixed;
-  top:35px;
-  right:25px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
   border-radius: 50%;
   background: $green;
   box-sizing: border-box;

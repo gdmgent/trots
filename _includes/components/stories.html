@@ -5,8 +5,8 @@
         <a href="{{ story.slug }}" target="_blank" id="{{ story.slug }}" class="story flex column centered justified-c {% if story.enabled == false %}disabled{% endif %}">
             {% capture storyThumbUrl %}{{ story.thumbnail.url | prepend: '/assets/img/stories/' | prepend: site.baseurl }}{% endcapture %}
             {% capture storyBlurredUrl %}{{ story.blurred.url | prepend: '/assets/img/stories/' | prepend: site.baseurl }}{% endcapture %}
-            <div class="story-bg" style='background-image:url("{{ storyThumbUrl }}");' alt="{{ story.thumbnail.alt }}"></div>
-            <div class="story-bg blur" style='background-image:url("{{ storyBlurredUrl }}");' alt="{{ story.blurred.alt }}"></div>
+            <div class="story-bg" style="background-image: url('{{ storyThumbUrl }}')" alt="{{ story.thumbnail.alt }}"></div>
+            <div class="story-bg blur" style="background-image: url('{{ storyBlurredUrl }}')" alt="{{ story.blurred.alt }}"></div>
             <div class="story-content">
                 <h2 class="story-title ahs__title lg black">{{ story.title | replace:'story','<span>story</span>' }}</h2>
                 <div class="story-description">{{ story.description }}</div>

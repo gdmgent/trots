@@ -3,13 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  position: relative;
+  position: fixed;
   z-index: 11;
 }
 .ahs__rainbow{
-  height:8px;
+  height: 8px;
   .part{
-    width:25%;
+    width: 25vw;
     &.orange{
       background-color:$primary;
     }

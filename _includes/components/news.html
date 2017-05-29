@@ -17,8 +17,7 @@
             <h2>Nieuws</h2>
         </div>
         <div class="news-carousel">
-            {% assign news = site.news | sort: 'order' %}
-            {% for topic in news %}
+            {% assign news = site.news | sort: 'order' %}{% for topic in news %}
                 {% if topic.active %}
                 <div class="news-topic">
                     <div class="news-topic-content">

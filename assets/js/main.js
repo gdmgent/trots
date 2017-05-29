@@ -4,20 +4,10 @@ function ready(cb) {
 
         : cb();
 };
-window.onload = function(){
 
-    if(getCookie('intro')){
-        if(document.querySelector('.intro-page')) {
-            document.querySelector('.intro-page').classList.add("gone");
-            document.querySelector('.wrapper').classList.remove("intro-animating");
-            setCookie('intro', true, 0.2);
-        }
-    }
-
-}
 var App;
-ready(function(){
-    App = {
+$(function(){
+    var App = {
         "init": function () {
             window.mobileAndTabletcheck();
             this.bindEventListeners();

@@ -2,7 +2,8 @@
 // This file contains styles that are specific to the stories page.
 // -----------------------------------------------------------------------------
 .stories {
-  .story {
+    overflow-y: scroll;
+    .story {
     width: 100%;
     min-height:400px;
     height: 33.3333334vw;

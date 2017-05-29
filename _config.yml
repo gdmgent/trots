@@ -66,6 +66,9 @@ defaults:
       values:
         layout: "story"
 exclude:
+  - node_modules/
+  - src/
+  - .gitignore
   - Gemfile
-  - LICENSE
+  - package.json
   - README.md
