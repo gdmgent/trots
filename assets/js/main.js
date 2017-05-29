@@ -1,14 +1,7 @@
-function ready(cb) {
-    /in/.test(document.readyState)
-        ? setTimeout(ready.bind(null, cb), 90)
-
-        : cb();
-};
-
 var App;
 $(function(){
     App = {
-        "init": function () {
+        init: function () {
             window.mobileAndTabletcheck();
             this.bindEventListeners();
             App.nav.init();
@@ -19,17 +12,15 @@ $(function(){
             App.news.init();
             App.background.init();
         },
-        "bindEventListeners":function(){
-
-        },
-        "header": {
-            "state":false,
-            "init":function(){
+        bindEventListeners: function () {},
+        header: {
+            state: false,
+            init: function () {
                 if(document.querySelector('.overview-toggle')){
                     App.header.bindEventListeners();
                 }
             },
-            "bindEventListeners":function(){
+            bindEventListeners: function () {
                 var gridIcon = document.querySelector('.overview-toggle');
                 gridIcon.addEventListener("mouseover", function () {
                     gridIcon.classList.remove("offhover");
@@ -46,22 +37,21 @@ $(function(){
                 })
             }
         },
-        "nav":{
-            "state":false,
-            "init":function(){
+        nav: {
+            state: false,
+            init: function () {
                 if(document.querySelector('.menu-toggle.menu')){
                     App.nav.bindEventListeners();
                 }
             },
-            "bindEventListeners":function(){
-                //console.log("Binding Menu events");
+            bindEventListeners: function () {
                 var icon = document.querySelector('.menu-toggle.menu');
                 icon.addEventListener("click", function () {
                     var self = this;
                     App.nav.toggleNavigation();
                 });
             },
-            'toggleNavigation':function(){
+            toggleNavigation: function () {
                 var icon = document.querySelector('.menu-toggle.menu');
                 var body = document.querySelector('body');
                 var navigation = document.querySelector('.navigation');
@@ -78,17 +68,15 @@ $(function(){
                 }
             },
         },
-        "sidebar":{
-            "state":false,
-            "shareState":false,
-            "init":function(){
-                if(document.querySelector('.sidebar-toggle')){
+        sidebar: {
+            state: false,
+            shareState: false,
+            init: function () {
+                if (document.querySelector('.sidebar-toggle')) {
                     App.sidebar.bindEventListeners();
                 }
             },
-            "bindEventListeners":function(){
-                //console.log('Binding sidebar events');
-
+            bindEventListeners: function () {
                 var closer = document.querySelector('.sidebar-toggle');
                 var shareToggle = document.querySelector('.share-toggle');
                 var shareBox = document.querySelector('.share-container');
@@ -113,7 +101,7 @@ $(function(){
                         App.sidebar.state = false;
                     }
                 });
-                if(window.mobileAndTabletcheck()){
+                if (window.mobileAndTabletcheck()) {
                     shareToggle.addEventListener("touchstart", function () {
                         var timout;
                         if (!App.sidebar.shareState) {
@@ -144,16 +132,16 @@ $(function(){
                 }
             }
         },
-        'contact': {
-            "message":null,
-            "form":null,
-            "statusMessage":null,
-            "init":function(){
+        contact: {
+            message: null,
+            form: null,
+            statusMessage: null,
+            init: function () {
                 if(document.querySelector('.contact-form')){
                     App.contact.bindEventListeners();
                 }
             },
-            "bindEventListeners":function(){
+            bindEventListeners: function(){
                 if(document.querySelector('#gmap')){
                     App.contact.map.load();
                 }
@@ -175,16 +163,17 @@ $(function(){
                         self.removeClass('error');
                     });
                 });
-                App.contact.message = new Object();
-                App.contact.message.loading = 'Versturen...';
-                App.contact.message.success = 'Bedankt. Uw bericht is verzonden!';
-                App.contact.message.failure = 'Oeps! Er was een probleem bij het versturen van je bericht!';
+                App.contact.message = {
+                    loading: 'Versturen...',
+                    success: 'Bedankt. Uw bericht is verzonden!',
+                    failure: 'Oeps! Er was een probleem bij het versturen van je bericht!'
+                };
                 App.contact.form = document.forms[0];
 
                 App.contact.statusMessage = document.createElement('div');
                 App.contact.statusMessage.className = 'status';
             },
-            "send":function(){
+            send: function () {
                 var button = document.querySelector('.form-btn');
                 button.classList.add("fly-away");
                 var error = false;
@@ -202,16 +191,15 @@ $(function(){
                 if(gotcha.length > 0){ console.log('You are spammer and I caught ya bruh'); error = true; }
 
                 if(!error){
-                    //console.log('Sending message to: '+vmail +' with subject: ' +subject+' and the message: '+message );
                     $.ajax({
                         url: 'https://formspree.io/jensdwul1@student.arteveldehs.be',
                         method: 'POST',
                         data: {
-                            "Naam":name,
-                            "Email":vmail,
-                            "_subject":"Arteveldehogeschool Trots:"+subject,
-                            "Onderwerp":subject,
-                            "Boodschap":message,
+                            Naam: name,
+                            Email: vmail,
+                            _subject: "Arteveldehogeschool Trots: " + subject,
+                            Onderwerp: subject,
+                            Boodschap: message,
                         },
                         dataType: 'json',
                         beforeSend: function() {
@@ -240,17 +228,17 @@ $(function(){
 
                 }
             },
-            "map":{
-                "initialised":false,
-                "initGoogleMaps":function(){
+            map: {
+                initialised: false,
+                initGoogleMaps: function () {
                     this.initialised = true;
                     App.contact.map.init();
                 },
-                "init":function(){
+                init: function () {
                     var myLatlng = new google.maps.LatLng(51.0873012,3.667899); // Add the coordinates
 
                     var mapOptions = {
-                        zoom:15,
+                        zoom: 15,
                         center: new google.maps.LatLng(51.0873012,3.667899),
                         panControl: false,
                         mapTypeControl: false,
@@ -260,89 +248,89 @@ $(function(){
                         zoomControl: false,
                         styles: [
                             {
-                                "featureType": "administrative",
-                                "elementType": "labels.text.fill",
-                                "stylers": [
+                                featureType: "administrative",
+                                elementType: "labels.text.fill",
+                                stylers: [
                                     {
-                                        "color": "#444444"
+                                        color: "#444444"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "landscape",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "landscape",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "color": "#f2f2f2"
+                                        color: "#f2f2f2"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "poi",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "poi",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "visibility": "off"
+                                        visibility: "off"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "poi",
-                                "elementType": "labels.text",
-                                "stylers": [
+                                featureType: "poi",
+                                elementType: "labels.text",
+                                stylers: [
                                     {
-                                        "visibility": "off"
+                                        visibility: "off"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "road",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "road",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "saturation": -100
+                                        saturation: -100
                                     },
                                     {
-                                        "lightness": 45
+                                        lightness: 45
                                     }
                                 ]
                             },
                             {
-                                "featureType": "road.highway",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "road.highway",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "visibility": "off"
+                                        visibility: "off"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "road.arterial",
-                                "elementType": "labels.icon",
-                                "stylers": [
+                                featureType: "road.arterial",
+                                elementType: "labels.icon",
+                                stylers: [
                                     {
-                                        "visibility": "off"
+                                        visibility: "off"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "transit",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "transit",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "visibility": "off"
+                                        visibility: "off"
                                     }
                                 ]
                             },
                             {
-                                "featureType": "water",
-                                "elementType": "all",
-                                "stylers": [
+                                featureType: "water",
+                                elementType: "all",
+                                stylers: [
                                     {
-                                        "color": "#dbdbdb"
+                                        color: "#dbdbdb"
                                     },
                                     {
-                                        "visibility": "on"
+                                        visibility: "on"
                                     }
                                 ]
                             }
@@ -354,7 +342,7 @@ $(function(){
                     google.maps.event.trigger(App.contact.map._map, 'resize');
                     App.contact.map._geoLocationMarker = new google.maps.Marker({
                         position: myLatlng,
-                        icon: '/assets/img/logo/marker.png',
+                        icon: '../assets/img/logo/marker.png',
                         title: 'Arteveldehogeschool Campus Mariakerke.',
                         size: new google.maps.Size(35, 32),
                     });
@@ -379,7 +367,7 @@ $(function(){
                     App.contact.map.controlBind();
 
                 },
-                "load":function(){
+                load: function () {
                     var key = 'AIzaSyBdn8xMIp4qHAWal3I2VZ9QfxmS4UvWCGg'; // Use your own Key!
                     //Load Google Maps Async
                     var script = document.createElement('script');
@@ -390,18 +378,18 @@ $(function(){
                     document.body.appendChild(script);
 
                 },
-                'resize': function(myLatlng){
+                resize: function (myLatlng) {
                     google.maps.event.trigger(App.contact.map._map, 'resize');
                     App.contact.map._map.setCenter(myLatlng);
                 },
-                'controlBind':function(){
-                    google.maps.event.addDomListener(zoomout, 'click', function() {
+                controlBind: function () {
+                    google.maps.event.addDomListener(zoomout, 'click', function () {
                         var currentZoomLevel = App.contact.map._map.getZoom();
                         if(currentZoomLevel != 0){
                             App.contact.map._map.setZoom(currentZoomLevel - 1);}
                     });
 
-                    google.maps.event.addDomListener(zoomin, 'click', function() {
+                    google.maps.event.addDomListener(zoomin, 'click', function () {
                         var currentZoomLevel = App.contact.map._map.getZoom();
                         if(currentZoomLevel != 21){
                             App.contact.map._map.setZoom(currentZoomLevel + 1);}
@@ -409,33 +397,33 @@ $(function(){
                 }
             },
         },
-        'intro':{
-            'sources': {
-                'active': 'default',
-                'default': [
+        intro: {
+            sources: {
+                active: 'default',
+                default: [
                     '/assets/video/landingpage.mp4',
                     '/assets/video/landingpage.webm',
                     '/assets/video/landingpage.ogv'
                 ],
-                'mobile': [
+                mobile: [
                     '/assets/video/landingpagemobile.mp4',
                     '/assets/video/landingpagemobile.webm',
                     '/assets/video/landingpagemobile.ogv'
                 ]
             },
-            'timer':setTimeout(function(){},60000),
-            'init':function(){
+            timer: setTimeout(function () {}, 60000),
+            init: function () {
                 if(document.querySelector('.intro-page')){
                     App.intro.bindEventListeners();
                     if(!getCookie('intro')){
                         document.querySelector('.wrapper').classList.add("intro-animating");
-                        App.intro.timer = setTimeout(function(){ App.intro.hide();},60000);
+                        App.intro.timer = setTimeout(function () { App.intro.hide(); }, 60000);
                     } else {
                         //App.intro.hide();
                     }
                 }
             },
-            'bindEventListeners':function(){
+            bindEventListeners: function () {
                 var btn = document.querySelector('.intro-continue-button');
                 btn.addEventListener("click", function () {
                     var self = this;
@@ -447,18 +435,18 @@ $(function(){
                     var self = this;
                     App.intro.show();
                 });
-                document.querySelector('.intro-page').addEventListener('touchmove',function(){
+                document.querySelector('.intro-page').addEventListener('touchmove', function () {
                     App.intro.hide();
                 });
-                document.querySelector('.intro-page').addEventListener('wheel',function(){
+                document.querySelector('.intro-page').addEventListener('wheel', function () {
                     App.intro.hide();
                 });
-                window.onresize = function(event) {
+                window.onresize = function (event) {
                     App.intro.resize();
                 }
                 App.intro.resize();
             },
-            'resize': function(){
+            resize: function () {
                 var vid = document.querySelector('.video-container video');
                 var sources = vid.querySelectorAll('source');
                 var width = $(window).width();
@@ -481,10 +469,10 @@ $(function(){
                     //vid.currentTime = progression;
                 }
             },
-            'hide':function(){
+            hide: function () {
                 document.querySelector('.intro-page').classList.add("hide");
                 document.querySelector('.wrapper').classList.add("popin");
-                setTimeout(function(){
+                setTimeout(function (){
                     document.querySelector('.video-container video').pause();
                     document.querySelector('.wrapper').classList.remove("intro-animating");
                     document.querySelector('.intro-page').classList.add("gone");
@@ -493,14 +481,14 @@ $(function(){
                 },710);
                 clearTimeout(App.intro.timer);
             },
-            'show':function(){
+            show: function () {
                 document.querySelector('.video-container video').currentTime = 0;
                 document.querySelector('.video-container video').play();
                 document.querySelector('.intro-page').classList.remove("gone");
                 document.querySelector('.intro-page').classList.add("show");
                 document.querySelector('.wrapper').classList.add("intro-animating");
                 document.querySelector('.wrapper').classList.add("hide");
-                setTimeout(function(){
+                setTimeout(function () {
                     document.querySelector('.intro-page').classList.remove("show");
                     document.querySelector('.wrapper').classList.remove("hide");
                     document.querySelector('.wrapper').classList.remove("popin");
@@ -508,20 +496,20 @@ $(function(){
             }
 
         },
-        "news":{
-            'currentTopic':null,
-            'currentKey':0,
-            'animating':false,
-            "topics":null,
-            'topics_length':0,
-            'autoplay':{
-                'duration': 8000,
-                'timer':null,
-                'pause':function(){
+        news: {
+            currentTopic: null,
+            currentKey: 0,
+            animating: false,
+            topics: null,
+            topics_length: 0,
+            autoplay: {
+                duration: 8000,
+                timer: null,
+                pause: function () {
                     document.querySelector('.news-timer').classList.remove('animate');
                     clearTimeout(App.news.autoplay.timer);
-                  },
-                'play':function(){
+                },
+                play: function () {
                     App.news.autoplay.timer = setTimeout(function(){
                         if(App.news.currentKey >= (App.news.topics_length - 1)){
                             App.news.currentKey = 0;
@@ -533,7 +521,7 @@ $(function(){
                     },App.news.autoplay.duration);
                   }
             },
-            'init':function(){
+            init: function () {
                 if(document.querySelector('.news')) {
                     App.news.bindEventListeners();
                     App.news.topics = document.querySelectorAll('.news-container .news-topic');
@@ -548,7 +536,7 @@ $(function(){
                     }
                 }
             },
-            'bindEventListeners':function(){
+            bindEventListeners: function () {
                 var newsOpener = document.querySelector('.news-toggle'),
                     newsCloser = document.querySelector('.news-closer'),
                     newsBox = document.querySelector('.news-container'),
@@ -568,18 +556,17 @@ $(function(){
                     App.news.autoplay.pause();
                 });
             },
-            'show':function(topic){
+            show: function (topic) {
                 if(!App.news.animating) {
                     App.news.animating = true;
                     if(App.news.currentTopic !== null){
                         App.news.currentTopic.classList.add('animate-out');
                     }
-                    //console.log('topic',App.news.topics);
                     document.querySelector('.news-container .news-content-bg').classList.add('animate');
                     topic.classList.add('animate-in');
                     setTimeout(function () {
                         document.querySelector('.news-container .news-content-bg').classList.remove('animate');
-                        if(App.news.currentTopic !== null) {
+                        if (App.news.currentTopic !== null) {
                             App.news.currentTopic.classList.remove('active');
                             App.news.currentTopic.classList.remove('animate-out');
                         }
@@ -596,14 +583,14 @@ $(function(){
             }
 
         },
-        "background":{
-            'init':function(){
+        background: {
+            init: function () {
                 if(document.querySelector('.home')) {
                     document.querySelector('.bg').classList.add('animate');
                 }
 
             },
-            "animateShapes":function(e){
+            animateShapes: function(e) {
 
                 var movementStrength = 20;
                 var height = movementStrength / $(window).height();
