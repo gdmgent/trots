@@ -7,7 +7,7 @@ function ready(cb) {
 
 var App;
 $(function(){
-    var App = {
+    App = {
         "init": function () {
             window.mobileAndTabletcheck();
             this.bindEventListeners();
