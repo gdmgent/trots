@@ -1,8 +1,26 @@
 {
+  "name": "gdm-gent-trots",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {},
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack",
+    "prod": "webpack -p"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
     "css-loader": "^0.28.3",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.3",
     "webpack": "^2.6.1"
   }
 }
