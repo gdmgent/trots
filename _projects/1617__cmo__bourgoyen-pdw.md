@@ -1,20 +1,20 @@
 ---
-title: "Bourgoyen"
+title: "Huisstijl Bourgoyen"
 slug: "bourgoyen-pdw"
-description: ""
+description: "De studenten van het 2de jaar CMO kregen de opdracht om het Gentse natuurreservaat De Bourgoyen van een huisstijl te voorzien. Er werd een logo ontwikkeld, een passende illustratiestijl en diverse print- en schermtoepassingen"
 type: "intern"
 members:
-    - name: "Phaedra DW"
-      direction: "Cross-Media Ontwerp"
+    - name: "Phaedra De Wambersie"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
     height: 1
     width: 2
     text-color: "96af20"
-    background-color: "96af20"
+    background-color: "ffffff"
 media:
     - url: "1.logo.jpg"
       type: "image"
@@ -25,8 +25,6 @@ media:
     - url: "4.illustraties.jpg"
       type: "image"
     - url: "5.illustraties.jpg"
-      type: "image"
-    - url: "6.poster.jpg"
       type: "image"
 created: 20/01/2017
 order: 9
