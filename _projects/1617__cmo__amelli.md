@@ -7,7 +7,7 @@ members:
     - name: "Shauny Eloot"
       direction: "Crossmedia Ontwerp"
       subdirection: "Photo Design"
-      disk: "3e schijf"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb.png"
     alt: ""

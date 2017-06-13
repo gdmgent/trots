@@ -7,7 +7,7 @@ members:
     - name: "Niels Dewelde"
       direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
