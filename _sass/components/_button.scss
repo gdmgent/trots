@@ -20,7 +20,13 @@
   position: relative;
   overflow: hidden;
   outline: 0;
-
+  &.compact {
+    height: auto;
+    min-height: 50px;
+    line-height: 1;
+    overflow: visible;
+    padding: 1rem;
+  }
   &.lowercase {
     text-transform: lowercase;
   }
