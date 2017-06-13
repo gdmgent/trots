@@ -1,5 +1,5 @@
 ---
-title: Memorial Van Damme poste
+title: Memorial Van Damme poster
 slug: "memorial-van-damme-lr"
 description: "De studenten CMO namen in 2016 deel aan de wedstrijd die op zoek gaat naar het campagnebeeld voor de 40ste editie van de Memorial Van Damme"
 type: "extern"

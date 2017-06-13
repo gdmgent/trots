@@ -1,20 +1,14 @@
 ---
 title: "The Sweet Tooth"
 slug: "sweet-tooth"
-description: "Als eindopdracht bij de 2e schijf,
-              moest er een campagne worden
-              gecreëerd voor een pretpark,
-              foodtruck of ruimtereis. Hierbij
-              konden de studenten hun creaviteit
-              de vrije loop laten gaan en de
-              resultaten waren soms subliem!<br>
-              Anthony, heeft gekozen voor een campagne te maken voor een foodtruck en dit was het resultaat."
+description: "In het tweede jaar ontwikkelden de studenten een huisstijl voor een foodtruck-concept. 
+              Anthony bracht zijn frozen yoghurt via een kleurrijk communicatieconcept aan de man"
 type: "intern"
 members:
     - name: "Anthony Nys"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "2de jaar"
 thumbnail:
     url: "thumb.png"
     alt: ""
@@ -27,12 +21,13 @@ media:
       type: "image"
     - url: "2.jpg"
       type: "image"
-      text: "Bij het starten van een campagne, begin je met het ontwikkelen van een logo. Hier gaan vele voorstudies aan
-            vooraf. Als de klant tevreden is met een van de voorstellen, dan begint de uitwerking, zoals hierboven."
+      text: "'Branded' communicatie vertrekt in de meeste gevallen vanuit een logo. Een logo kan makkelijk gereproduceerd worden, maar voor het er is worden vele uren besteed aan ontwerpwerk, besprekingen en bijschaven "
     - url: "3.jpg"
       type: "image"
-      text: "Bij de opdracht was het de bedoeling een mascotte voor de campagne te onwtikkelen, deze reflecteert waarvoor
-            de onderneming of de campagne staat."
+    - url: "sweetvan.jpg"
+      type: "image"
+      text: "Een mockup van de Sweet Tooth foodtruck. Hiermee geef je de klant al een hele goede indruk van hoe de uiteindelijke truck er zal uitzien"
+
 created: 20/01/2017
 order: 8
 ---
