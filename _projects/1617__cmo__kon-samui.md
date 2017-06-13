@@ -1,13 +1,13 @@
 ---
 title: Kon Samui
 slug: "kon-samui"
-description: De opdracht hield in dat er een banner voor de Facebook groep van de klas moest worden gemaakt.
+description: Een graphic designer moet zich kunnen verplaatsen in de leefwereld van elk soort klant. In dit geval ging om het de wereld van reizen en het promoten van toeristische bestemmingen. 
 type: "intern"
 members:
-    - name: "Elena Van H"
-      direction: "Cross-Media Ontwerp"
+    - name: "Elena Vanhauwaert"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "3de jaar"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
