@@ -11,7 +11,7 @@ type: "intern"
 members:
     - name: "Dean De Coster"
       direction: "Multimediaproductie"
-      subdirection: "Produce"
+      subdirection: "Audiovisual Design"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb.png"

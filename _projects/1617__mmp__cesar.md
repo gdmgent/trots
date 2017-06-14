@@ -8,7 +8,7 @@ type: "intern"
 members:
     - name: "Victor Gouhie"
       direction: "Multimediaproductie"
-      subdirection: "Produce"
+      subdirection: "Audiovisual Design"
       disk: "2e Schijf"
 thumbnail:
     url: "thumb_1x2.png"

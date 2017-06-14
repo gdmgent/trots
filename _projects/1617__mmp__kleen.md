@@ -10,7 +10,7 @@ type: "intern"
 members:
     - name: "Nicolas Van Hecke"
       direction: "Multimediaproductie"
-      subdirection: "Prodev"
+      subdirection: "New Media Development"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_800x400.png"

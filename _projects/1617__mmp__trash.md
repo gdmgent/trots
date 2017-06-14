@@ -10,7 +10,7 @@ type: "intern"
 members:
     - name: "Bert Goossens"
       direction: "Multimediaproductie"
-      subdirection: "Prodev"
+      subdirection: "New Media Development"
       disk: "3e Schijf"
 thumbnail:
     url: "thumbnail.png"

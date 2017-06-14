@@ -11,7 +11,7 @@ type: "intern"
 members:
     - name: "Pieter-Jan Sas"
       direction: "Multimediaproductie"
-      subdirection: "Prodev"
+      subdirection: "New Media Development"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_1x1.png"

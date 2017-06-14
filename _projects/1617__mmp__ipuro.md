@@ -10,7 +10,7 @@ type: "intern"
 members:
     - name: "Kevin De Vuyst"
       direction: "Multimediaproductie"
-      subdirection: "Produce"
+      subdirection: "Audiovisual Design"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_1x1.png"

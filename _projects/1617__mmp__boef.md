@@ -7,7 +7,7 @@ type: "intern"
 members:
     - name: "Arthuur Bruwier"
       direction: "Multimediaproductie"
-      subdirection: "Produce"
+      subdirection: "Audiovisual Design"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_BruwierArtuur.png"

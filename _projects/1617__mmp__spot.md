@@ -6,7 +6,7 @@ type: "intern"
 members:
     - name: "Maxim Van Hove"
       direction: "Multimediaproductie"
-      subdirection: "Prodev"
+      subdirection: "New Media Development"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_800x400.png"

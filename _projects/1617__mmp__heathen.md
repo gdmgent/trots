@@ -6,7 +6,7 @@ type: "intern"
 members:
     - name: "Lander Denys"
       direction: "Multimediaproductie"
-      subdirection: "Produce"
+      subdirection: "Audiovisual Design"
       disk: "3e Schijf"
 thumbnail:
     url: "thumb_DenysLander_800x400.png"
