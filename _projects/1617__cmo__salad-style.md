@@ -5,16 +5,16 @@ description: "Het voedingsbedrijf Vandemoortele kwam aankloppen bij de laatsteja
 type: "extern"
 members:
     - name: "Elena Vanhauwaert"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "Schijf 3"
+      disk: "3de jaar"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
     height: 1
     width: 1
     text-color: "9cd380"
-    background-color: "fff"
+    background-color: "ffffff"
 media:
     - url: "1.salad.jpg"
       type: "image"

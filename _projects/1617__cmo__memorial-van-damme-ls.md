@@ -1,13 +1,13 @@
 ---
 title: Memorial Van Damme 40ste Editie
 slug: "memorial-van-damme-ls"
-description: "De studenten 2CMO namen in 2016 deel aan de wedstrijd die op zoek gaat naar het campagnebeeld voor de 40ste editie van de Memorial Van Damme"
+description: "De studenten CMO namen in 2016 deel aan de wedstrijd die op zoek gaat naar het campagnebeeld voor de 40ste editie van de Memorial Van Damme"
 type: "extern"
 members:
     - name: "Laurens Segaert"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "2de jaar"
 thumbnail:
     url: "thumb.gif"
     alt: ""

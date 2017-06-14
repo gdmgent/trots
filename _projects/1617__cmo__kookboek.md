@@ -1,13 +1,13 @@
 ---
 title: "Kookboek"
 slug: "kookboek"
-description: De opdracht hield in dat er een kookboek moest worden gemaakt.
+description: Ontwerp de cover van een kookboek over Noordzeevis. Hiervoor werkten de studenten met basismateriaal dat ter beschikking werd gesteld door de Gentse Uitgever Borgerhoff en Lamberigts. 
 type: "extern"
 members:
-    - name: "Elena Van H"
-      direction: "Cross-Media Ontwerp"
+    - name: "Elena Vanhauwaert"
+      direction: "Crossmedia Ontwerp"
       subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      disk: "2de jaar"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
