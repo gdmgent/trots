@@ -1,6 +1,6 @@
 ---
 title: GMB story
-slug: gmb-story
+slug : gmb-story
 description: "Coming soon!"
 thumbnail:
     url: "gmb-story/thumb.jpg"

@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html dir="ltr" lang="nl-be" class="no-js" prefix="og: http://ogp.me/ns#">
-{% capture thumb %}{{ page.thumbnail.url | prepend: '/' | prepend: page.slug | prepend: '/assets/img/projects/' }}{% endcapture %}
+{% capture thumb %}{{ page.thumbnail.url | prepend: '/' | prepend: page.slug | prepend: '/assets/projects/' }}{% endcapture %}
 {% include components/head.html %}
 <body class="flex column" data-mobile>
 {% include components/header.html %}
@@ -12,19 +12,19 @@
             {% for mediaobject in page.media %}
             <div class="detail-item-container">
                 {% if mediaobject.type == "image" %}
-                {% capture imgUrl %}{{ mediaobject.url | prepend: '/' | prepend: page.slug | prepend: '/assets/img/projects/' | prepend: site.baseurl }}{% endcapture %}
+                {% capture imgUrl %}{{ mediaobject.url | prepend: '/' | prepend: page.slug | prepend: '/assets/projects/' | prepend: site.baseurl }}{% endcapture %}
                     <picture>
                         <!--<source
                                 media="(max-width: 480px)"
-                                srcset="/assets/img/projects/{{ page.slug }}/{{ mediaobject.url | replace:'/','/sm/' }}">-->
+                                srcset="/assets/projects/{{ page.slug }}/{{ mediaobject.url | replace:'/','/sm/' }}">-->
                         <!--<source
                                 media="(max-width: 680px)"
-                                srcset="/assets/img/projects/{{ page.slug }}/{{ mediaobject.url | replace:'/','/md/' }}">-->
+                                srcset="/assets/projects/{{ page.slug }}/{{ mediaobject.url | replace:'/','/md/' }}">-->
                         <img src="{{ imgUrl }}" alt="{{ mediaobject.text }}">
                     </picture>
                 {% else if mediaobject.type == "vimeo" %}
-                    <div class='video-container'>
-                        <iframe src='https://player.vimeo.com/video/{{mediaobject.url}}?color=ee9900&title=0&byline=0&portrait=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/{{ mediaobject.url }}?color=ee9900&title=0&byline=0&portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                     </div>
                 {% endif %}
                 {% if mediaobject.text %}

@@ -1,6 +1,6 @@
 ---
 title: MMP story
-slug: mmp-story
+slug : mmp-story
 description: "Coming soon!"
 thumbnail:
     url: "mmp-story/thumb.jpg"

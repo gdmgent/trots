@@ -272,28 +272,28 @@
             overflow: hidden;
           }
           .hover-text-content {
-            z-index: 1;
+            background: white;
+            border-top-right-radius: 8px;
+            padding: 10px 17px;
             position: relative;
             text-align: left;
-            padding: 10px 17px;
-            background: white;
+            z-index: 1;
             .hover-title {
-              position: relative;
               display: block;
+              position: relative;
               text-transform: uppercase;
-              -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoothing: grayscale;
+              -webkit-font-smoothing: antialiased;
             }
             .hover-subtitle {
-              position: relative;
-              display: block;
               color: $text-color;
-              -webkit-font-smoothing: antialiased;
+              display: block;
+              position: relative;
               -moz-osx-font-smoothing: grayscale;
+              -webkit-font-smoothing: antialiased;
             }
           }
           .hover-text-filler {
-            margin: 2px 0 0 5px;
             background: white;
             @include translate(0,50%);
           }

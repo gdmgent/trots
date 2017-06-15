@@ -1,6 +1,6 @@
 ---
 title: GMB case
-slug: gmb-case
+slug : gmb-case
 description: "Ontdek hoe de GMB'ers een online reclamecampagne opstellen om hoger in de zoekresultaten van Google te scoren."
 branding: "GMB"
 thumbnail:
@@ -27,16 +27,16 @@ sections:
         color: "dark"
         weight: "bold"
     background:
-      type: "image"
+      type: image
       url: "slide01.jpg"
       mobile: "dark"
     stickers:
       mobile:
-      - url: "GMB_logo.png"
+      - url : "GMB_logo.png"
         position: "left bottom"
         size: "medium"
       desktop:
-      - url: "GMB_logo.png"
+      - url : "GMB_logo.png"
         position: "left bottom"
         size: "small"
   - thumb: "thumb2.png"
@@ -53,7 +53,7 @@ sections:
       - line: "Er wordt een Adwords reclamebudget van $250 voorzien door Google. Hiermee bedenken en lanceren de GMB'ers een online reclamecampagne voor een non-profit organisatie. De campagne loopt over een periode van drie weken. Grafimediabeleidatwork."
         color: "dark"
     background:
-      type: "image"
+      type: image
       url: "slide02.jpg"
       mobile: "light"
   - thumb: "thumb3.png"
@@ -67,7 +67,7 @@ sections:
       paragraph:
       - line: "We werken aan de hand van een stappenplan. Zo kunnen we de situatie zo goed mogelijk analyseren en tot het gepaste resultaat komen."
     background:
-      type: "image"
+      type: image
       url: "slide03.jpg"
       mobile: "light"
   - thumb: "thumb4.png"
@@ -86,7 +86,7 @@ sections:
       - line: "Bepaal samen met hen de doelstellingen van de campagne"
       - line: "Analyseer hun huidige website en ga op zoek naar de juiste trefwoorden"
     background:
-      type: "image"
+      type: image
       url: "slide04.jpg"
       mobile: "light"
       gradient: "gradient right"
@@ -106,7 +106,7 @@ sections:
       - line: "Bepaal de AdWords strategie Stuur het rapport naar Google om toegang te krijgen tot je AdWords Competition Account"
       - line: "Je kan nu via Google Adwords je advertenties aanmaken en beheren"
     background:
-      type: "image"
+      type: image
       url: "slide05.jpg"
       mobile: "dark"
       gradient: "gradient left"
@@ -124,7 +124,7 @@ sections:
       - line: "Schrijf de resultaten en conclusie van de campagne neer in een rapport."
       - line: "Noteer aanbevelingen voor de vzw met oog op hun toekomstige online campagnes."
     background:
-      type: "image"
+      type: image
       url: "slide06.jpg"
       mobile: "light"
       gradient: "gradient right"
@@ -141,7 +141,7 @@ sections:
       paragraph: 
       - line: "Stel het project voor aan de hand van een mooie presentatie."
     background:
-      type: "image"
+      type: image
       url: "slide07.jpg"
       mobile: "light"
       gradient: "left gradient"
@@ -171,7 +171,7 @@ sections:
         highlight: "S"
         size: "xsm"
     background:
-      type: "image"
+      type: image
       url: "slide08.jpg"
       mobile: "dark"
   - thumb: "thumb9.jpg"
@@ -184,7 +184,7 @@ sections:
       paragraph: 
       - line: "Wil je meer zien van onze studenten? Bekijk dan zeker eens de GDM portfolio of breng een bezoekje tijdens een van onze infodagen."
     background:
-      type: "image"
+      type: image
       url: "slide09.jpg"
       mobile: "light"
     contact: true

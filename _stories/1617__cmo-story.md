@@ -1,6 +1,6 @@
 ---
 title: CMO story
-slug: cmo-story
+slug : cmo-story
 description: "Ontdek hoe een CMO student groeit van een beginner tot een ervaren professional."
 branding: "CMO"
 thumbnail:
@@ -47,7 +47,7 @@ sections:
       - line: "Je leert je ideeën visualiseren met klassieke middelen zoals potlood en papier, maar ook om ze digitaal uit te werken met de meest recente grafische software."
         color: "dark"
     background:
-      type: "image"
+      type: image
       url: "slide02.jpg"
       mobile: "light"
   - thumb: "slide03.png"
@@ -69,7 +69,7 @@ sections:
     text:
       position: "right"
       title: 
-      - line: "Eerste schijf"
+      - line: "Eerste jaar"
         color: "orange"
         weight: "bold"
       paragraph:
@@ -78,44 +78,44 @@ sections:
       - line: "Als CMO’er leg je hier je basis om later de meer complexe creatieve opdrachten te kunnen uitvoeren. Je leert over universele designprincipes en hoe die voor zowel voor web- als printdesigners de sleutel tot een goed ontwerp zijn."
         color: "dark"
     background:
-      type: "image"
+      type: image
       url: "slide04.png"
       mobile: "light"
     stickers:
       mobile:
-      - url: "navJ1.png"
+      - url : "navJ1.png"
         position: "bottom center"
         size: "xlarge"
-      - url: "beest.gif"
+      - url : "beest.gif"
         position: "left bottom"
         size: "xxxlarge"
       desktop:
-      - url: "navJ1.png"
+      - url : "navJ1.png"
         position: "top center"
         size: "xlarge"
-      - url: "beest.gif"
+      - url : "beest.gif"
         position: "left midden"
         size: "xxlarge"
   - thumb: "slide05.png"
     text:
       position: "right"
       title: 
-      - line: "Tweede schijf"
+      - line: "Tweede jaar"
         color: "green"
         weight: "bold"
       paragraph:
       - line: "Vanaf het derde semester gaan we een versnelling hoger en worden de werkstukken complexer, het onderwerp van de briefings wordt realistischer en er wordt meer aandacht besteed aan het uitdenken van een sterk concept. User experience komt voor interactieve projecten op de voorgrond te staan."
     background:
-      type: "image"
+      type: image
       url: "slide05.png"
       mobile: "dark"
     stickers:
      mobile:
-     - url: "navJ2.png"
+     - url : "navJ2.png"
        position: "bottom center"
        size: "xlarge"
      desktop:
-     - url: "navJ2.png"
+     - url : "navJ2.png"
        position: "top center"
        size: "xlarge"
   - thumb: "slide06.png"
@@ -135,34 +135,34 @@ sections:
       mobile-still: "kader.jpg"
     stickers:
       mobile:
-      - url: "navJ2.png"
+      - url : "navJ2.png"
         position: "bottom center"
         size: "xlarge"
       desktop:
-      - url: "navJ2.png"
+      - url : "navJ2.png"
         position: "top center"
         size: "xlarge"
   - thumb: "slide07.png"
     text:
       position: "right"
       title: 
-      - line: "Derde schijf"
+      - line: "Derde jaar"
         color: "blue"
         weight: "bold"
       paragraph:
       - line: "In het laatste jaar word je verder klaargestoomd voor het werkveld. Je krijgt de ruimte om op basis van een uitdagend pakket aan briefings te sleutelen aan een online portfolio dat als visitekaartje zal dienen voor je eerste sollicitatie. Het laatste semester sluit je af met een stage van 6 weken."
         color: "dark"
     background:
-      type: "image"
+      type: image
       url: "wereldkaart_cmostory.png"
       mobile: "dark"
     stickers:
       mobile:
-      - url: "navJ3.png"
+      - url : "navJ3.png"
         position: "bottom center"
         size: "xlarge"
       desktop:
-      - url: "navJ3.png"
+      - url : "navJ3.png"
         position: "top center"
         size: "xlarge"
   - thumb: "slide08.png"
@@ -193,7 +193,7 @@ sections:
       - line: "Wil je meer zien van onze studenten? Bekijk dan zeker eens de GDM portfolio of breng een bezoekje tijdens een van onze infodagen."
         color: "dark"
     background:
-      type: "image"
+      type: image
       url: "slide09.png"
       mobile: "light"
     contact: true
