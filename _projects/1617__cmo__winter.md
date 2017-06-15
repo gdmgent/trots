@@ -5,7 +5,7 @@ description: ""
 type: "intern"
 members:
     - name: "Freya De Corte"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Photo Design"
       disk: "2e Schijf"
 thumbnail:

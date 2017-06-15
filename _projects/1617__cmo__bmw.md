@@ -5,7 +5,7 @@ description: "Ontwerp van een didactische plaat met als onderwerp 'classic cars'
 type: "intern"
 members:
     - name: "Niels Dewelde"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de schijf"
 thumbnail:

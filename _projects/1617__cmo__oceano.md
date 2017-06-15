@@ -6,7 +6,7 @@ description: "De opdracht was het maken van een campagne
 type: "intern"
 members:
     - name: "Caroline Pham"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2e Schijf"
 thumbnail:

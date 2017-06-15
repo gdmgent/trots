@@ -50,7 +50,7 @@ sections:
         color: "blue"
         weight: "bold"
       paragraph: 
-      - line: "Er wordt een Adwords reclamebudget van $250 voorzien door Google. Hiermee bedenken en lanceren de GMBers een online reclamecampagne voor een non-profit organisatie. De campagne loopt over een periode van drie weken. Grafimediabeleidatwork."
+      - line: "Er wordt een Adwords reclamebudget van $250 voorzien door Google. Hiermee bedenken en lanceren de GMB'ers een online reclamecampagne voor een non-profit organisatie. De campagne loopt over een periode van drie weken. Grafimediabeleidatwork."
         color: "dark"
     background:
       type: "image"

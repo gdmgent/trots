@@ -5,7 +5,7 @@ description: "In deze opdracht staat de verwondering centraal. In de briefing st
 type: "intern"
 members:
     - name: "Gert-Jan De Baets"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Photo Design"
       disk: "2e Schijf"
 thumbnail:

@@ -5,7 +5,7 @@ description: "De studenten CMO namen in 2016 deel aan de wedstrijd die op zoek g
 type: "extern"
 members:
     - name: "Linde Raats"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2e Schijf"
 thumbnail:

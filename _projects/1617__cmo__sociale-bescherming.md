@@ -5,7 +5,7 @@ description: "Het tweede jaar CMO maakte in 2016 de wenskaart voor de NGO 'FOS'.
 type: "intern"
 members:
     - name: "Yoeri De Sloovere"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de jaar"
 thumbnail:

@@ -5,7 +5,7 @@ description: Ontwerp de cover van een kookboek over Noordzeevis. Hiervoor werkte
 type: "extern"
 members:
     - name: "Elena Vanhauwaert"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de jaar"
 thumbnail:

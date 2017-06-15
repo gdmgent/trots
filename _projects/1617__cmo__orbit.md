@@ -5,7 +5,7 @@ description: ""
 type: "intern"
 members:
     - name: "Siham Asrikh"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2e Schijf"
 thumbnail:

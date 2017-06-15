@@ -5,7 +5,7 @@ description: "Het voedingsbedrijf Vandemoortele kwam aankloppen bij de laatsteja
 type: "extern"
 members:
     - name: "Elena Vanhauwaert"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "3de jaar"
 thumbnail:

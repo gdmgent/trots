@@ -5,7 +5,7 @@ description: "De studenten van het 2de jaar CMO kregen de opdracht om het Gentse
 type: "intern"
 members:
     - name: "Phaedra De Wambersie"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de schijf"
 thumbnail:

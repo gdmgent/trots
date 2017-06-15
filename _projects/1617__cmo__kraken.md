@@ -6,7 +6,7 @@ description: "De eindopdracht van het tweede jaar CMO bestond uit het ontwikkele
 type: "intern"
 members:
     - name: "Amandine Faingnaert"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de jaar"
 thumbnail:

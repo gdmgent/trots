@@ -6,7 +6,7 @@ description: "In het tweede jaar ontwikkelden de studenten een huisstijl voor ee
 type: "extern"
 members:
     - name: "Liesbeth Tempelare"
-      direction: "Crossmedia Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2de jaar"
 thumbnail:

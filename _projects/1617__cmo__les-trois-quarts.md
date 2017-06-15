@@ -14,7 +14,7 @@ description: "Als een van de opdrachten in de
 type: "intern"
 members:
     - name: "Quinten Braem"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Photo Design"
       disk: "3e Schijf"
 thumbnail:

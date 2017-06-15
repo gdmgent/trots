@@ -5,7 +5,7 @@ description: ""
 type: "intern"
 members:
     - name: "Rietje Van Hoof"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "2e Schijf"
 thumbnail:

@@ -27,7 +27,7 @@ sections:
         color: "green"
         weight: "bold"
       paragraph:
-      - line: "‘Crossmedia Ontwerp’ (CMO) is de afstudeerrichting waar visueel en creatief denken centraal staat, maar waar je evengoed inzicht verwerft in de technische uitvoermogelijkheden zodat je als afgestudeerde designer meteen inzetbaar bent in de boomende creatieve industrie."
+      - line: "‘Crossmedia-ontwerp’ (CMO) is de afstudeerrichting waar visueel en creatief denken centraal staat, maar waar je evengoed inzicht verwerft in de technische uitvoermogelijkheden zodat je als afgestudeerde designer meteen inzetbaar bent in de boomende creatieve industrie."
     background:
       type: "video"
       url: "drone.mp4"
@@ -38,11 +38,11 @@ sections:
     text:
       position: "left"
       title: 
-      - line: "Wat doet een crossmedia-ontwerper"
+      - line: "Wat doet een Crossmedia-ontwerper"
         color: "pink"
         weight: "bold"
       paragraph:
-      - line: "Crossmedia ontwerpers zorgen ervoor dat elke boodschap van een klant een ‘branded experience’ wordt. Huisstijlen ontwikkelen, flyers en magazines vormgeven, lay-out voor web en mobile of digitale bewerking van beelden behoren tot het takenpakket."
+      - line: "Crossmedia-ontwerpers zorgen ervoor dat elke boodschap van een klant een ‘branded experience’ wordt. Huisstijlen ontwikkelen, flyers en magazines vormgeven, lay-out voor web en mobile of digitale bewerking van beelden behoren tot het takenpakket."
         color: "dark"
       - line: "Je leert je ideeën visualiseren met klassieke middelen zoals potlood en papier, maar ook om ze digitaal uit te werken met de meest recente grafische software."
         color: "dark"
@@ -122,7 +122,7 @@ sections:
     text:
       position: "left"
       title: 
-      - line: "Keuzetraject Photodesign of Graphic design"
+      - line: "Keuzetraject Photo Design of Graphic Design"
         color: "green"
         weight: "bold"
       paragraph:

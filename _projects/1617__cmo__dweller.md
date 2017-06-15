@@ -5,7 +5,7 @@ description: "'Stel je voor dat een reis naar de planeet Mars niet veel meer om 
 type: "intern"
 members:
     - name: "Jonas Dermul"
-      direction: "Cross-Media Ontwerp"
+      direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
       disk: "Schijf 2"
 thumbnail:
