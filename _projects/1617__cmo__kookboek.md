@@ -7,7 +7,7 @@ members:
     - name: "Elena Vanhauwaert"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""

@@ -69,7 +69,7 @@ sections:
     text:
       position: "right"
       title: 
-      - line: "Eerste jaar"
+      - line: "Eerste schijf"
         color: "orange"
         weight: "bold"
       paragraph:
@@ -100,7 +100,7 @@ sections:
     text:
       position: "right"
       title: 
-      - line: "Tweede jaar"
+      - line: "Tweede schijf"
         color: "green"
         weight: "bold"
       paragraph:
@@ -126,7 +126,7 @@ sections:
         color: "green"
         weight: "bold"
       paragraph:
-      - line: "In semester 4 kan je kiezen om je werkstukken meer op een fotografische basis af te stemmen. Dan wordt je een photodesigner. Verkies je om vanuit puur grafische technieken visuals te creëeren voor je werkstukken dan kies je voor het keuzetraject Graphicdesign."
+      - line: "In semester 4 kan je kiezen om je werkstukken meer op een fotografische basis af te stemmen. Dan word je een photodesigner. Verkies je om vanuit puur grafische technieken visuals te creëeren voor je werkstukken dan kies je voor het keuzetraject Graphicdesign."
         color: "dark"
     background:
       type: "video"
@@ -146,11 +146,11 @@ sections:
     text:
       position: "right"
       title: 
-      - line: "Derde jaar"
+      - line: "Derde schijf"
         color: "blue"
         weight: "bold"
       paragraph:
-      - line: "In het laatste jaar wordt je verder klaargestoomd voor het werkveld. Je krijgt de ruimte om op basis van een uitdagend pakket aan briefings te sleutelen aan een online portfolio dat als visitekaartje zal dienen voor je eerste sollicitatie. Het laatste semester sluit je af met een stage van 6 weken."
+      - line: "In het laatste jaar word je verder klaargestoomd voor het werkveld. Je krijgt de ruimte om op basis van een uitdagend pakket aan briefings te sleutelen aan een online portfolio dat als visitekaartje zal dienen voor je eerste sollicitatie. Het laatste semester sluit je af met een stage van 6 weken."
         color: "dark"
     background:
       type: "image"

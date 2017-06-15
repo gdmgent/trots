@@ -1,14 +1,14 @@
 ---
 title: El Dorado
 slug: "kraken"
-description: "De eindopdracht van het tweede jaar CMO bestond uit het ontwikkelen van een branding voor een fictief thema-pretpark. 
+description: "De eindopdracht van de tweede schijf CMO bestond uit het ontwikkelen van een branding voor een fictief thema-pretpark. 
               Amandine dompelde zich onder in de wereld van piraten en kwam dit pareltje verdedigen op haar jury"
 type: "intern"
 members:
     - name: "Amandine Faingnaert"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.png"
     alt: ""

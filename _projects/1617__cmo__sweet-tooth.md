@@ -1,14 +1,14 @@
 ---
 title: "The Sweet Tooth"
 slug: "sweet-tooth"
-description: "In het tweede jaar ontwikkelden de studenten een huisstijl voor een foodtruck-concept. 
+description: "In de tweede schijf ontwikkelden de studenten een huisstijl voor een foodtruck-concept. 
               Anthony bracht zijn frozen yoghurt via een kleurrijk communicatieconcept aan de man"
 type: "intern"
 members:
     - name: "Anthony Nys"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.png"
     alt: ""

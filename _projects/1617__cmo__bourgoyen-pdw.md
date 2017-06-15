@@ -1,7 +1,7 @@
 ---
 title: "Huisstijl Bourgoyen"
 slug: "bourgoyen-pdw"
-description: "De studenten van het 2de jaar CMO kregen de opdracht om het Gentse natuurreservaat De Bourgoyen van een huisstijl te voorzien. Er werd een logo ontwikkeld, een passende illustratiestijl en diverse print- en schermtoepassingen"
+description: "De studenten van het 2de schijf CMO kregen de opdracht om het Gentse natuurreservaat De Bourgoyen van een huisstijl te voorzien. Er werd een logo ontwikkeld, een passende illustratiestijl en diverse print- en schermtoepassingen"
 type: "intern"
 members:
     - name: "Phaedra De Wambersie"

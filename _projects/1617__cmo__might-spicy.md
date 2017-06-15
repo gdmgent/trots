@@ -1,14 +1,14 @@
 ---
 title: Mighty Spicy
 slug: "mighty-spicy"
-description: "In het tweede jaar ontwikkelden de studenten een huisstijl voor een foodtruck-concept. 
+description: "In de tweede schijf ontwikkelden de studenten een huisstijl voor een foodtruck-concept. 
               Liesbeth bracht haar pittige taco's via een kleurrijke branding aan de man"
 type: "extern"
 members:
     - name: "Liesbeth Tempelare"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumbnail_1x2.png"
     alt: ""

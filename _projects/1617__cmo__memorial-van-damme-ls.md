@@ -7,7 +7,7 @@ members:
     - name: "Laurens Segaert"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.gif"
     alt: ""

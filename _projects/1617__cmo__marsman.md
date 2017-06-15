@@ -7,7 +7,7 @@ description: "Als een van de opdrachten in de
               Kato heeft er voor gekozen om
               een campagne over een ruimtereis
               te maken. <br><br> Doorheen heel de
-              campagne wordt je geloodst door
+              campagne word je geloodst door
               Marsel, de ruimterobot."
 type: "intern"
 members:

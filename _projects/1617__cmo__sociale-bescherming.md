@@ -1,13 +1,13 @@
 ---
 title: "Sociale bescherming"
 slug: "sociale-bescherming"
-description: "Het tweede jaar CMO maakte in 2016 de wenskaart voor de NGO 'FOS'. Yoeri maakte een grafisch beeld dat perfect vertolkt waar de organisatie voor staat"
+description: "De tweede schijf CMO maakte in 2016 de wenskaart voor de NGO 'FOS'. Yoeri maakte een grafisch beeld dat perfect vertolkt waar de organisatie voor staat"
 type: "intern"
 members:
     - name: "Yoeri De Sloovere"
       direction: "Crossmedia-ontwerp"
       subdirection: "Graphic Design"
-      disk: "2de jaar"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""
