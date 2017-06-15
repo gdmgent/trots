@@ -6,8 +6,8 @@ description: "In de tweede schijf ontwikkelden de studenten een huisstijl voor e
 type: "extern"
 members:
     - name: "Liesbeth Tempelare"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumbnail_1x2.png"

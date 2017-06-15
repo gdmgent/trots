@@ -5,8 +5,8 @@ description: Een graphic designer moet zich kunnen verplaatsen in de leefwereld 
 type: "intern"
 members:
     - name: "Elena Vanhauwaert"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "3de schijf"
 thumbnail:
     url: "thumb.jpg"

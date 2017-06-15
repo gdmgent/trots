@@ -9,9 +9,9 @@ description: "De opdracht hield in dat er een app moest
 type: "intern"
 members:
     - name: "Bert Goossens"
-      direction: "Multimediaproductie"
-      subdirection: "New Media Development"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "New Media Development"
+      disk: "3de schijf"
 thumbnail:
     url: "thumbnail.png"
     alt: ""

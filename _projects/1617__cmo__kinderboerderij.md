@@ -5,9 +5,9 @@ description: "Als eindwerk voor de tweede schijf ontwikkelden de studenten Graph
 type: "intern"
 members:
     - name: "Jules Van Rijsselberge"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""

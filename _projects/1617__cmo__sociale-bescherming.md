@@ -5,8 +5,8 @@ description: "De tweede schijf CMO maakte in 2016 de wenskaart voor de NGO 'FOS'
 type: "intern"
 members:
     - name: "Yoeri De Sloovere"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"

@@ -7,9 +7,9 @@ description: "Maak een one minute video door gebruik
 type: "intern"
 members:
     - name: "Victor Gouhie"
-      direction: "Multimediaproductie"
-      subdirection: "Audiovisual Design"
-      disk: "2e Schijf"
+      major: "Multimediaproductie"
+      minor: "Audiovisual Design"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb_1x2.png"
     alt: ""

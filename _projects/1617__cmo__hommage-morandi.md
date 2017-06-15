@@ -5,9 +5,9 @@ description: ""
 type: "intern"
 members:
     - name: "Hommage Morandi"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Photo Design"
-      disk: "2e Schijf"
+      major: "Crossmedia-ontwerp"
+      minor: "Photo Design"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb_Morandi.png"
     alt: ""

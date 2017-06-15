@@ -9,9 +9,9 @@ description: "De opdracht was het maken van een 3D
 type: "intern"
 members:
     - name: "Kevin De Vuyst"
-      direction: "Multimediaproductie"
-      subdirection: "Audiovisual Design"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "Audiovisual Design"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb_1x1.png"
     alt: ""

@@ -10,9 +10,9 @@ description: "Deze film werd gemaakt als oefening binnen een leeromgeving en hee
 type: "intern"
 members:
     - name: "Dean De Coster"
-      direction: "Multimediaproductie"
-      subdirection: "Audiovisual Design"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "Audiovisual Design"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb.png"
     alt: ""

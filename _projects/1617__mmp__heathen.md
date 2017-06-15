@@ -5,9 +5,9 @@ description: "Title sequence voor een niet bestaande serie/film."
 type: "intern"
 members:
     - name: "Lander Denys"
-      direction: "Multimediaproductie"
-      subdirection: "Audiovisual Design"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "Audiovisual Design"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb_DenysLander_800x400.png"
     alt: ""

@@ -5,9 +5,9 @@ description: "De studenten 2CMO namen in 2016 deel aan de wedstrijd die op zoek 
 type: "extern"
 members:
     - name: "Wannes Vansteenhuyse"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""

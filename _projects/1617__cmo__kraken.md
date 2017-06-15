@@ -6,8 +6,8 @@ description: "De eindopdracht van de tweede schijf CMO bestond uit het ontwikkel
 type: "intern"
 members:
     - name: "Amandine Faingnaert"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumb.png"

@@ -12,9 +12,9 @@ description: "Als een van de opdrachten in de
 type: "intern"
 members:
     - name: "Kato Janssens"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
-      disk: "2e Schijf"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
+      disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"
     alt: ""

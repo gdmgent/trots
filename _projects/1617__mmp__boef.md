@@ -6,9 +6,9 @@ description: "Een dief trekt op pad om zijn slag te slaan...<br><br>
 type: "intern"
 members:
     - name: "Arthuur Bruwier"
-      direction: "Multimediaproductie"
-      subdirection: "Audiovisual Design"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "Audiovisual Design"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb_BruwierArtuur.png"
     alt: ""

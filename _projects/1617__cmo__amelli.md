@@ -5,8 +5,8 @@ description: "Opdracht: bedenkt een nieuwe merknaam en ontwerp de verpakkingen v
 type: "intern"
 members:
     - name: "Shauny Eloot"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Photo Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Photo Design"
       disk: "3de schijf"
 thumbnail:
     url: "thumb.png"

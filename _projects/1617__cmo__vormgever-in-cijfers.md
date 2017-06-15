@@ -13,9 +13,9 @@ description: "Als een van de opdrachten in de
 type: "intern"
 members:
     - name: "Simon Van Damme"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
-      disk: "3e Schijf"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
+      disk: "3de schijf"
 thumbnail:
     url: "thumbnail.jpg"
     alt: ""

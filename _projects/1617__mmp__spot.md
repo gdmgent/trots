@@ -5,9 +5,9 @@ description: ""
 type: "intern"
 members:
     - name: "Maxim Van Hove"
-      direction: "Multimediaproductie"
-      subdirection: "New Media Development"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "New Media Development"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb_800x400.png"
     alt: ""

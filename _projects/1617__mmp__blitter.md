@@ -10,9 +10,9 @@ description: "De opdracht voor het opleidingsonderdeel
 type: "intern"
 members:
     - name: "Pieter-Jan Sas"
-      direction: "Multimediaproductie"
-      subdirection: "New Media Development"
-      disk: "3e Schijf"
+      major: "Multimediaproductie"
+      minor: "New Media Development"
+      disk: "3de schijf"
 thumbnail:
     url: "thumb_1x1.png"
     alt: ""

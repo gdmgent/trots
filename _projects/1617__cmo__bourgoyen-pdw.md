@@ -5,8 +5,8 @@ description: "De studenten van het 2de schijf CMO kregen de opdracht om het Gent
 type: "intern"
 members:
     - name: "Phaedra De Wambersie"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumb.jpg"

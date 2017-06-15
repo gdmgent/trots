@@ -5,8 +5,8 @@ description: "De studenten CMO namen in 2016 deel aan de wedstrijd die op zoek g
 type: "extern"
 members:
     - name: "Laurens Segaert"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumb.gif"

@@ -6,8 +6,8 @@ description: "In de tweede schijf ontwikkelden de studenten een huisstijl voor e
 type: "intern"
 members:
     - name: "Anthony Nys"
-      direction: "Crossmedia-ontwerp"
-      subdirection: "Graphic Design"
+      major: "Crossmedia-ontwerp"
+      minor: "Graphic Design"
       disk: "2de schijf"
 thumbnail:
     url: "thumb.png"
