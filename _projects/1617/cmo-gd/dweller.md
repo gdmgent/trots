@@ -1,7 +1,7 @@
 ---
 title: Space Dweller
 slug : dweller
-description: 'Stel je voor dat een reis naar de planeet Mars niet veel meer om het lijf zou hebben dan een intercontinentale vlucht zoals we die nu al op aarde kennen. Hoe zou je deze reis dan promoten?'
+description: "Opdracht: 'stel je voor dat een reis naar de planeet Mars even gewoon zou zijn als een intercontinentale vlucht op aarde. Hoe zou je deze reis dan promoten?'"
 type: intern
 members:
     - name : Jonas Dermul
@@ -20,13 +20,13 @@ media:
       type: image
     - url : balk-logo2.png
       type: image
-      text: De campagne vertrekt vanuit het ontwerp van het logo. Een goed logo is eenvoudig te reproduceren en in dit geval moest er goed gelet worden op een evenwicht tussen het woordmerk en het beeldmerk of symbool.
+      text: Een huisstijl vertrekt vaak vanuit het ontwerp van een logo, dat als basis dient voor de verdere uitwerken van het visuele systeem.
     - url : balk-visual-poster.png
       type: image
-      text: Voor de poster werd een opvallende visual ontworpen om als blikvanger te gebruiken.
+      text: Voor de poster werd een opvallende visual ontworpen als blikvanger.
     - url : balk-poster.png
       type: image
-      text: Het goed afgewogen en bewust beperkt gehouden kleurenpalet zorgt voor visuele binding tussen alle elementen in de campagne
+      text: Het goed afgewogen en bewust beperkt gehouden kleurenpalet zorgt voor visuele binding tussen de elementen in de campagne
     - url : balk-visual-buswrap.png
       type: image
     - url : balk-buswrap.png
