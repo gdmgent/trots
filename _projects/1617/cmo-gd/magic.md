@@ -1,10 +1,10 @@
 ---
 title: "The Amazing Story of Magic"
 slug : "magic"
-description: ""
-type: intern
+description: "De Goochelclub van Drongen vroeg aan de CMO studenten om een poster te ontwerpen ter promotie van een voorstelling"
+type: extern
 members:
-    - name : "Elena Van H"
+    - name : "Lynn Janssens"
       major: Crossmedia-ontwerp
       minor: Graphic Design
       academic-year: 2de jaar
