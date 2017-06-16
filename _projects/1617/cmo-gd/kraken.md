@@ -1,19 +1,18 @@
 ---
 title: El Dorado
 slug : "kraken"
-description: "De eindopdracht van de tweede jaar CMO bestond uit het ontwikkelen van een branding voor een fictief thema-pretpark. 
-              Amandine dompelde zich onder in de wereld van piraten en kwam dit pareltje verdedigen op haar jury"
-type: intern
+description: "De eindopdracht van de tweede jaar CMO bestond uit het branden van een fictief thema-pretpark. Amandine creëerde het tot de verbeelding sprekende 'El Dorado', een pretpark met piraten-thema"
+type: "intern"
 members:
     - name : "Amandine Faingnaert"
       major: Crossmedia-ontwerp
       minor: Graphic Design
       academic-year: 2de jaar
 thumbnail:
-    url: "thumb.png"
+    url: "thumb-landscape.jpg"
     alt: ""
-    height: 2
-    width: 1
+    height: 1
+    width: 2
     text-color: "d6447a"
     background-color: "d6447a"
 media:
