@@ -1,5 +1,5 @@
 ---
-title: "Wijnverpakking - Les Trois Quarts"
+title: "Les Trois Quarts"
 slug : "packshot-wijn"
 description: "Wijn wordt maar al te vaak in een klassieke verpakking verkocht. De studenten 3CMO onderzochten hoe een hedendaagse wijnverpakking er kan uitzien"
 type: intern

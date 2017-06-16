@@ -18,7 +18,7 @@ thumbnail:
 media:
     - url : "detail1_DeCorteFreya.png"
       type: image
-      text: "Beschrijving van deze afbeelding die onder de afbeelding verschijnt."
+      text: "If you can dream it, we'll learn you how to photoshop it - GDM"
 created: 20/01/2017
 order: 18
 ---

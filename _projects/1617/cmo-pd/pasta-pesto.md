@@ -4,7 +4,7 @@ slug : "pasta-pesto"
 description: ""
 type: intern
 members:
-    - name : "Lisa Walcarus"
+    - name : "Lisa Walcarius"
       major: Crossmedia-ontwerp
       minor: "Photo Design"
       academic-year: 2de jaar
