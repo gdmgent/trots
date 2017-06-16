@@ -1,5 +1,5 @@
 ---
-title: "Heathen"
+title: 'Title Sequence &ndash; Heathen'
 slug : heathen
 description: Title sequence voor een niet bestaande serie/film.
 type: intern

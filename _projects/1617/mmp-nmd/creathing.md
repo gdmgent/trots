@@ -23,10 +23,10 @@ media:
       text: Dashboard van de backoffice.
     - url : backoffice2.jpg
       type: image
-      text: Nieuwe kandidaat ingeven
+      text: Nieuwe kandidaat ingeven.
     - url : database.png
       type: image
-      text: Databaseschema
+      text: Databaseschema.
 created: 15/06/2017
 order: 13
 ---

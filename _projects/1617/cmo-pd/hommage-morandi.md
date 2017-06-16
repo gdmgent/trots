@@ -1,12 +1,12 @@
 ---
-title: "Hommage Morandi"
-slug : "hommage-morandi"
+title: Hommage Morandi
+slug : hommage-morandi
 description: ""
 type: intern
 members:
-    - name : "Hommage Morandi"
+    - name : Hommage Morandi
       major: Crossmedia-ontwerp
-      minor: "Photo Design"
+      minor: Photo Design
       academic-year: 2de jaar
 thumbnail:
     url: "thumb_Morandi.png"

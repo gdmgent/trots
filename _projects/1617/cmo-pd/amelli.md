@@ -1,33 +1,33 @@
 ---
 title: Melk Campagne 
-slug : "milk"
+slug : milk
 description: "Opdracht: bedenkt een nieuwe merknaam en ontwerp de verpakkingen voor 3 soorten melk. Vol, halfvol en melk met een speciaal smaakje. Er werd een huisstijl uitgewerkt die tevens de basis vormde voor een bijhorende reclamecampagne." 
 type: intern
 members:
-    - name : "Shauny Eloot"
+    - name : Shauny Eloot
       major: Crossmedia-ontwerp
-      minor: "Photo Design"
+      minor: Photo Design
       academic-year: 3de jaar
 thumbnail:
-    url: "thumb.png"
+    url: thumb.png
     alt: ""
     height: 1
     width: 1
     text-color: "b96528"
     background-color: "fcc553"
 media:
-    - url : "1_logoevolutie.png"
+    - url : 1_logoevolutie.png
       type: image
-    - url : "2_halfvollogo.png"
+    - url : 2_halfvollogo.png
       type: image
-    - url : "3_halfvolverpakking.png"
+    - url : 3_halfvolverpakking.png
       type: image
-      text: "Kapvorm en photoshop mockup van de halfvolle melk."
-    - url : "4_applogo.png"
+      text: Kapvorm en photoshop mockup van de halfvolle melk.
+    - url : 4_applogo.png
       type: image
-    - url : "5_appmockup.png"
+    - url : 5_appmockup.png
       type: image
-      text: "Ontwerp van een promotionele app. Op basis van een ingegeven 'mood' worden melksuggesties aangereikt."
+      text: Ontwerp van een promotionele app. Op basis van een ingegeven 'mood' worden melksuggesties aangereikt.
 created: 20/01/2017
 order: 2
 ---

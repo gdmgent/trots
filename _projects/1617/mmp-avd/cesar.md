@@ -1,5 +1,5 @@
 ---
-title: "Cesar"
+title: Cesar
 slug : cesar
 description: Maak een one minute video door gebruik te maken van ‘Vormator’ elementen, dat was de opdracht voor het vak 2D animatie.
 type: intern

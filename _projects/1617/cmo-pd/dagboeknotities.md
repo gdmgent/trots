@@ -1,12 +1,12 @@
 ---
-title: "Dagboeknotities"
-slug : "dagboeknotities"
+title: Dagboeknotities
+slug : dagboeknotities
 description: "In deze opdracht staat de verwondering centraal. In de briefing staat: 'laat je verwonderen door de kleine dingen en gebeurtenissen rond je. Kijk door een lens zoals een kind en ontdek de wereld om je heen'"
 type: intern
 members:
-    - name : "Gert-Jan De Baets"
+    - name : Gert-Jan De Baets
       major: Crossmedia-ontwerp
-      minor: "Photo Design"
+      minor: Photo Design
       academic-year: 2de jaar
 thumbnail:
     url: "thumb_800x400.png"

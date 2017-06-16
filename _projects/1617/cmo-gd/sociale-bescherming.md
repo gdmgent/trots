@@ -9,7 +9,7 @@ members:
       minor: Graphic Design
       academic-year: 2de jaar
 thumbnail:
-    url: "thumb.jpg"
+    url: thumb.jpg
     alt: ""
     height: 1
     width: 1

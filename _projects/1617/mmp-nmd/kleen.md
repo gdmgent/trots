@@ -13,7 +13,7 @@ thumbnail:
     alt: ""
     height: 1
     width: 2
-    text-color: "333333"
+    text-color: "498FE2"
     background-color: "d4d7d9"
 media:
     - url : detail1_VanHeckeNicolas.png
