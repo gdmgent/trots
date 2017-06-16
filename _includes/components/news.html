@@ -13,6 +13,7 @@
             <span class="line"></span>
             <span class="line"></span>
         </button>
+        {% comment %}
         <div class="news-title">
             <h2>Nieuws</h2>
         </div>
@@ -34,6 +35,38 @@
                                 <path class="st0" d="M0.2,9.5c0,0.4,0.4,0.8,0.8,0.8h17.1l-6.9,6.9c-0.3,0.3-0.3,0.8,0,1.1c0.2,0.2,0.4,0.2,0.6,0.2  c0.2,0,0.4-0.1,0.6-0.2l8.3-8.3c0.3-0.3,0.3-0.8,0-1.1l-8.3-8.3c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1l7,7H1  C0.5,8.7,0.2,9.1,0.2,9.5z"/>
                             </svg>
                             Alle stories
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endcomment %}
+        <style>
+            .news-title > h2 {
+                font-size: 1.5em !important;
+            }
+            .news-topic-content .news-topic-title {
+                font-weight: 400 !important;
+            }
+        </style>
+        <div class="news-title">
+            <h2>In de kijker</h2>
+        </div>
+        <div class="news-carousel">
+            {% assign news = site.news | sort: 'order' %}{% for topic in news %}
+                {% if topic.active %}
+                <div class="news-topic">
+                    <div class="news-topic-content">
+                        {% if topic.subtitle %}<h3 class="news-topic-subtitle">{{ topic.subtitle }}</h3>{% endif %}
+                        <h2 class="news-topic-title">{{ topic.title }}</h2>
+                        {% if topic.description %}<p>{{ topic.description }}</p>{% endif %}
+                        <br>
+                        <a class="btn outline rounded" href="{{ topic.button.uri | relative_url }}" target="_blank">
+                            <svg class="icon arrow right white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 21 19" style="enable-background:new 0 0 21 19;" xml:space="preserve">
+                                <path class="st0" d="M0.2,9.5c0,0.4,0.4,0.8,0.8,0.8h17.1l-6.9,6.9c-0.3,0.3-0.3,0.8,0,1.1c0.2,0.2,0.4,0.2,0.6,0.2  c0.2,0,0.4-0.1,0.6-0.2l8.3-8.3c0.3-0.3,0.3-0.8,0-1.1l-8.3-8.3c-0.3-0.3-0.8-0.3-1.1,0c-0.3,0.3-0.3,0.8,0,1.1l7,7H1  C0.5,8.7,0.2,9.1,0.2,9.5z"/>
+                            </svg>
+                            {{ topic.button.label }}
                         </a>
                     </div>
                 </div>

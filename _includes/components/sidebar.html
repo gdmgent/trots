@@ -4,7 +4,9 @@
     <div class="content stretch">
         <h2 class="ahs__title sm bold blue">{{ page.title }}</h2>
         <p>{{ page.description }}</p>
-
+        {% assign tags = page.tags | sort: 'name' %}{% for tag in tags %}
+        <span class="tag">{{ tag.name }}</span>
+        {% endfor %}
         <blockquote>
         {% for member in page.members %}
             {% assign memberIndex = {{ forloop.index }} %}

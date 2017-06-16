@@ -12,9 +12,9 @@
         <span class="line"></span>
     </button>
     {% assign current = page.url | downcase | split: '/' %}
-    <!-- <button class="overview-toggle flex justified-c centered wrap active {% for cur in current %}{% if cur == 'project' %}visible{% endif %}{% endfor %}" onclick="window.location.href='/'" > -->
+    <!-- <button class="overview-toggle flex justified-c centered wrap active {% for cur in current %}{% if cur == 'project' %}visible{% endif %}{% endfor %}" onclick="window.location.href='{{ '/' | relative_url }}'" > -->
          {% capture closeImgUrl %}{{ 'close-detail.svg' | prepend: '/assets/img/icons/' | prepend: site.baseurl }}{% endcapture %}
-         <div class="overview-toggle wrap active {% for cur in current %}{% if cur == 'project' %}visible{% endif %}{% endfor %}" onclick="window.location.href='/'" ><img src="{{ closeImgUrl }}" ></div>
+         <div class="overview-toggle wrap active {% for cur in current %}{% if cur == 'project' %}visible{% endif %}{% endfor %}" onclick="window.location.href='{{ '/' | relative_url }}'" ><img src="{{ closeImgUrl }}" ></div>
          <!--  <div class="cube-row flex">
             <div class="cube" ></div>
             <div class="cube"></div>

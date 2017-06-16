@@ -31,13 +31,14 @@
 
 // 5. Components
 @import
-  'components/grid',
-  'components/split',
-  'components/intro',
-  'components/news',
   'components/button',
+  'components/grid',
+  'components/intro',
   'components/lineelements',
-  'components/sidebar';
+  'components/news',
+  'components/sidebar',
+  'components/split',
+  'components/tag';
 
 // 6. Page-specific styles
 @import
