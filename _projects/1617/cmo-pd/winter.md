@@ -9,7 +9,7 @@ members:
       minor: Photo Design
       academic-year: 2de jaar
 thumbnail:
-    url: "thumb_400x400.png"
+    url: thumb_400x400.png
     alt: ""
     height: 1
     width: 1
