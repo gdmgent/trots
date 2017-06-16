@@ -1,15 +1,7 @@
 ---
 title: Infografiek - Vormgever in Cijfers
 slug : vormgever-in-cijfers
-description: "Als een van de opdrachten in de
-              derde jaar, moesten de studenten
-              een infografiek maken over
-              een grafisch vormgever.<br><br>
-              Simon Van Damme heeft gekozen
-              om deze te benaderen met enkele
-              gekke figuren die voor een mooi
-              evenwicht zorgt tussen de cijfers
-              en beelden."
+description: "De studenten CMO visualiseerden de resultaten van een bevraging naar de drijfveren van grafische vormgevers"
 type: intern
 members:
     - name : "Simon Van Damme"
@@ -26,12 +18,9 @@ thumbnail:
 media:
     - url : "1.jpg"
       type: image
-      text: "Alles begint met een duidelijke schets waarop je kan werken. Welke objecten komen waar, hoe gaat de tekst gepositioneerd
-             zijn tegenover het beeld en hoe gaat het totaalbeeld eruit zien."
+      text: "De bedoeling van een infografiek is om cijfermateriaal te visualiseren zodat de informatie makkelijker verteerbaar wordt voor een breder publiek" 
     - url : "2.jpg"
       type: image
-      text: "Eens de schets klaar is, begint het digitaal uitwerken. Dit is de stap waarin je alles de uiteindelijke vorm geeft en
-             perfectioneerd voor de gebruiker."
     - url : "3.jpg"
       type: image
 created: 20/01/2017
