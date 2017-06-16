@@ -9,10 +9,10 @@ members:
       minor: Graphic Design
       academic-year: 2de jaar
 thumbnail:
-    url: "thumb.jpg"
+    url: "thumb-square.jpg"
     alt: ""
     height: 1
-    width: 2
+    width: 1
     text-color: "96af20"
     background-color: "ffffff"
 media:
