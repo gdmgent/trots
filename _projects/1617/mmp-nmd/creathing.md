@@ -11,6 +11,7 @@ tags:
     version: 5.4
   - name: Vue.js
     version: 2.3
+  - name: JavaScript
 type: intern
 members:
     - name : Tine Vancoillie
@@ -18,19 +19,23 @@ members:
       minor: New Media Development
       academic-year: 2de jaar
 thumbnail:
-    url: thumb_400x800.jpg
+    url: thumb_400x800.png
     alt: ""
     height: 2
     width: 1
-    text-color: "84839a"
-    background-color: "84839a"
+    text-color: "323232"
+    background-color: "E5F1F2"
 media:
-    - url : backoffice-01.jpg
+    - url : backoffice-01.png
       type: image
       text: Dashboard van de backoffice.
-    - url : backoffice-02.jpg
+    - url : backoffice-02.png
       type: image
       text: Nieuwe kandidaat ingeven.
+    - url : backoffice-03.png
+      type: image
+    - url : backoffice-04.png
+      type: image
     - url : database.png
       type: image
       text: Databaseschema.

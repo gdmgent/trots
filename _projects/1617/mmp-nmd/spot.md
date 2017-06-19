@@ -7,6 +7,7 @@ tags:
   - name: MySQL
   - name: Symfony
   - name: Ionic
+  - name: JavaScript
 type: intern
 members:
     - name : Maxim Van Hove

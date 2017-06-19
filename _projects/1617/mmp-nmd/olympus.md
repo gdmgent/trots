@@ -11,6 +11,7 @@ tags:
     version: 5.4
   - name: Vue.js
     version: 2.3
+  - name: JavaScript
 type: intern
 members:
     - name : Jens De Wulf
@@ -22,7 +23,7 @@ thumbnail:
     alt: ""
     height: 1
     width: 1
-    text-color: "84839a"
+    text-color: "B06F31"
     background-color: "84839a"
 media:
     - url : frontoffice.png

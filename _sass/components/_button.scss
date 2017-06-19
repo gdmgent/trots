@@ -125,9 +125,9 @@
   border-radius: 50%;*/
   height: 60px;
   width: 60px;
-  position: fixed;
+  position: absolute;
   top: 107px;
-  right: 21px;
+  right: 35px;
   /*@include scale(0.7);
   @include backface-visibility(hidden);
   @include transform-style (flat);
@@ -222,7 +222,6 @@
   @include animation(arrowToRow3 0.5s ease-in-out);
   @include fill-mode(forwards)
 }
-
 
 .overview-toggle.offhover .cube-row .cube {
   @include transition(background-color 250ms ease-in-out, height 100ms ease-in-out 400ms, width 100ms ease-in-out 400ms, margin 100ms ease-in-out 400ms, -webkit-box-shadow 100ms ease-in-out 400ms);

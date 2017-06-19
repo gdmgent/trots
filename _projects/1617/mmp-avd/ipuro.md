@@ -9,7 +9,7 @@ members:
       minor: Audiovisual Design
       academic-year: 3de jaar
 thumbnail:
-    url: thumb2_1x1.png
+    url: thumb2_1x1.jpg
     alt: ""
     height: 1
     width: 1
