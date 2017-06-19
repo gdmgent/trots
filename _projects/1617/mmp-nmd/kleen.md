@@ -1,7 +1,12 @@
 ---
 title: "Hybrid App &ndash; Kleen"
 slug : kleen
-description: De opdracht hield in dat er een app moest gemaakt worden om het probleem van zwerfvuil aan te pakken.<br>Deze app moest vanaf onderzoek tot demo uitgewerkt worden.
+description: "Opdracht: bedenk, ontwerp en programmeer een Hybrid App dat het ecologische, economische en sociaal probleem van zwerfvuil en sluikstorten kan helpen oplossen."
+tags:
+  - name: PHP
+  - name: MySQL
+  - name: Symfony
+  - name: Ionic
 type: intern
 members:
     - name : Nicolas Van Hecke

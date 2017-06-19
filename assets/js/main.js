@@ -192,12 +192,12 @@ $(function(){
 
                 if(!error){
                     $.ajax({
-                        url: 'https://formspree.io/jensdwul1@student.arteveldehs.be',
+                        url: 'https://formspree.io/gdm.secretariaat@arteveldehs.be',
                         method: 'POST',
                         data: {
+                            Website: 'Arteveldehogeschool Trots',
                             Naam: name,
                             Email: vmail,
-                            _subject: "Arteveldehogeschool Trots: " + subject,
                             Onderwerp: subject,
                             Boodschap: message,
                         },
@@ -205,10 +205,8 @@ $(function(){
                         beforeSend: function() {
                             App.contact.statusMessage.innerHTML = App.contact.message.loading;
                             $(button).attr('disabled', true);
-                            console.log('Sending');
                         },
                         success: function(data) {
-                            console.log('Great success');
                             App.contact.form.insertAdjacentHTML('beforeend', App.contact.message.success);
                             setTimeout(function(){
                                 $(button).attr('disabled', false);
@@ -217,7 +215,6 @@ $(function(){
                         },
                         error: function(err) {
                             App.contact.form.insertAdjacentHTML('beforeend', App.contact.message.failure);
-                            console.log('Great FAILURE');
                             setTimeout(function(){
                                 $(button).attr('disabled', false);
                                 button.classList.remove("fly-away");
@@ -348,7 +345,7 @@ $(function(){
                     });
                     var contentString = '<div class="map-marker-info">' +
                         '<h4>Arteveldehogeschool Campus Mariakerke</h4>'+
-                        '<p>Industrieweg 232 - 9030 Gent<br>Belgie '+
+                        '<p>Industrieweg 232 &ndash; 9030 Gent<br>Belgie '+
                         '<br>T. +32 (0)9 234 86 00'+
                         '</p>'+
                         ''+

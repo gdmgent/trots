@@ -1,7 +1,12 @@
 ---
 title: "Hybrid App &ndash; Blitter"
 slug : blitter
-description: "De opdracht voor het opleidingsonderdeel New Media Design & Development III luidde als volgt: maak een softwaresysteem om het ecologische, economische en sociaal probleem van zwerfvuil en sluikstorten op te lossen."
+description: "Opdracht: bedenk, ontwerp en programmeer een Hybrid App dat het ecologische, economische en sociaal probleem van zwerfvuil en sluikstorten kan helpen oplossen."
+tags:
+  - name: PHP
+  - name: MySQL
+  - name: Symfony
+  - name: Ionic
 type: intern
 members:
     - name : Pieter-Jan Sas

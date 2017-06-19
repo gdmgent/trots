@@ -53,7 +53,7 @@
                         <span data-letters="Portfolio"></span>
                     </h3>
                 </a>
-            </div>
+            </div>{% comment %}
             <div class="nav-block">
                 <a class='big-block {% if page.url == "/stories/" %}active{% endif %}' href="{{ 'stories' | relative_url }}">
                     <h3 class="ahs__title nav-title md  black" data-letters="GDM Stories">
@@ -62,6 +62,7 @@
                     </h3>
                 </a>
             </div>
+            {% endcomment %}
             <div class="nav-block">
                 <a class='big-block {% if page.url == "/externeprojecten/" %}active{% endif %}' href="{{ 'externeprojecten' | relative_url }}">
                     <h3 class="ahs__title nav-title md black" data-letters="Externe Projecten">

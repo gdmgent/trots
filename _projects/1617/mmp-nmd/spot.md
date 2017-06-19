@@ -1,7 +1,12 @@
 ---
 title: "Hybrid App &ndash; Spot App"
 slug : spot-app
-description: ""
+description: "Opdracht: bedenk, ontwerp en programmeer een Hybrid App dat het ecologische, economische en sociaal probleem van zwerfvuil en sluikstorten kan helpen oplossen."
+tags:
+  - name: PHP
+  - name: MySQL
+  - name: Symfony
+  - name: Ionic
 type: intern
 members:
     - name : Maxim Van Hove
