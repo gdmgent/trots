@@ -383,13 +383,13 @@ $(function(){
                 controlBind: function () {
                     google.maps.event.addDomListener(zoomout, 'click', function () {
                         var currentZoomLevel = App.contact.map._map.getZoom();
-                        if(currentZoomLevel != 0){
+                        if(currentZoomLevel !== 0){
                             App.contact.map._map.setZoom(currentZoomLevel - 1);}
                     });
 
                     google.maps.event.addDomListener(zoomin, 'click', function () {
                         var currentZoomLevel = App.contact.map._map.getZoom();
-                        if(currentZoomLevel != 21){
+                        if(currentZoomLevel !== 21){
                             App.contact.map._map.setZoom(currentZoomLevel + 1);}
                     });
                 }
