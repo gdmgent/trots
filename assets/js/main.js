@@ -386,7 +386,6 @@ $(function(){
                         if(currentZoomLevel !== 0){
                             App.contact.map._map.setZoom(currentZoomLevel - 1);}
                     });
-
                     google.maps.event.addDomListener(zoomin, 'click', function () {
                         var currentZoomLevel = App.contact.map._map.getZoom();
                         if(currentZoomLevel !== 21){
@@ -492,7 +491,6 @@ $(function(){
                     document.querySelector('.wrapper').classList.remove("popin");
                 },710);
             }
-
         },
         news: {
             currentTopic: null,
