@@ -1,8 +1,7 @@
 ---
 title: "Themapark campagne"
 slug : "oceano"
-description: "De opdracht was het maken van een campagne
-              rond een zelfverzonnen pretpark."
+description: "De eindopdracht van de tweede jaar CMO bestond uit het ontwikkelen van een branding voor een fictief thema-pretpark. Caroline was ambitieus en ging voor een themapark dat zich een paar mijl onder de zeespiegel bevindt."
 type: intern
 members:
     - name : "Caroline Pham"
@@ -19,25 +18,21 @@ thumbnail:
 media:
     - url : "1_detail_logo.png"
       type: image
-      text: "De eerste stap in het designproces is het maken van een logo. Hier komt zowel een studie naar vormen, fonts als
-             kleuren aan te pas. Dit alles is essentieel om de huisstijl te bepalen en je hieraan te houden."
+      text: "'Branded' communicatie vertrekt in de meeste gevallen vanuit een logo. Een logo kan makkelijk gereproduceerd worden, maar voor het er is worden vele uren besteed aan ontwerpwerk, besprekingen en bijschaven "
     - url : "2_detail_logovoorstudie.png"
       type: image
     - url : "3_detail_logovoorstudie.png"
       type: image
     - url : "4_detail_kleurgebruik.png"
       type: image
-      text: "Vervolgens beginnen we met het creeeren van de gewentste toepassingen, rekeninghoudend met de huisstijl.
-             Onderstaand vind je in deze volgorde: de mascotte, poster en buswrap."
+      text: "De volgende stap is de creatie van de gewentste toepassingen, rekeninghoudend met de huisstijl. Onderstaand zien we de mascotte, poster en buswrap."
     - url : "5_detail_mascotte.png"
       type: image
     - url : "6_detail_poster.png"
       type: image
     - url : "7_detail_buswrap.png"
       type: image
-      text: "Natuurlijk maken we als grafisch ontwerper ook digitale toepassingen. Om de campagne te vervolledigen
-             werkte ik dan ook het design van een onepage website uit. Hierop is onderandere het grondplan van
-             het themapark te vinden."
+      text: "Crossmedia designers nemen ook de digitale toepassingen voor hun rekening. Deze bestaan onder andere uit een onepage website met grondplan" 
     - url : "8_detail_onepage.png"
       type: image
 created: 20/01/2017
