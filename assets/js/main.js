@@ -33,7 +33,8 @@ $(function(){
                     gridIcon.classList.add("offhover");
                 });
                 gridIcon.addEventListener("click", function () {
-                    window.history.back();
+                    //window.history.back();
+                    window.location.href = '/trots/';
                 })
             }
         },
