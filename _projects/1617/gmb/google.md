@@ -16,7 +16,7 @@ thumbnail:
     text-color: "ea4335"
     background-color: "ffffff"
 media:
-    - url : google-marketing-challenge.jpg
+    - url : online-marketing-challenge.jpg
       type: image
 created: 20/01/2017
 order: 6
