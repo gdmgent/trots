@@ -1,6 +1,6 @@
 ---
 title: "New Media Apps &ndash; Diabeasy"
-slug : Diabeasy
+slug : diabeasy
 description: "Opdracht: bedenk, ontwerp en maak een prototype van een smartwatch- en een smartphone-app, en maak er een promowebsite voor.<br><br>Diabeasy is een app voor diabetici die ervoor moet zorgen dat mensen met diabetes gedurende de hele dag een constante bloedsuikerspiegel hebben en het aantal insuline-injecties zo minimaal mogelijk kunnen houden."
 tags:
   - name: Adobe XD
