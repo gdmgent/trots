@@ -25,7 +25,7 @@ google-analytics-tracking_id  :  "UA-18202861-3"
 # Build settings
 # --------------
 # --------------
-gems:
+plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-mentions

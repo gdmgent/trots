@@ -1,27 +1,26 @@
 ---
 ---
+{%- assign stories = site.stories %}
 [
-  {% assign stories = site.stories %}
-  {% for story in stories %}
-    {% assign paragraphs = story.intro[0].desktop.paragraph %}
-    {
-      "id": "{{ story.url | slugify }}",
-      "url": "{{ story.url | absolute_url }}", 
-      "title": "{{ story.title | escape }}",
-      "title_long": "{{ story.title | escape }}",
-      "description": "{{ story.description | escape }}",
-      "thumbnail_url": "{{ story.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: 'assets/img/stories' | absolute_url }}",
-      "content": {{ story.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | jsonify }},
-      "slug": "{{ story.slug | escape }}",
-      "intro": {
-        "title": "{{ story.intro[0].title }}",
-        "paragraphs": [
-          {% for paragraph in paragraphs %}
-          "{{ paragraph.line }}"
-          {% unless forloop.last %},{% endunless %}
-          {% endfor %}
-        ]
-      }
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
+  {%- for story in stories %}
+  {%- assign paragraphs = story.intro[0].desktop.paragraph %}
+  {
+    "id": "{{ story.url | slugify }}",
+    "url": "{{ story.url | absolute_url }}", 
+    "title": "{{ story.title | escape }}",
+    "title_long": "{{ story.title | escape }}",
+    "description": "{{ story.description | escape }}",
+    "thumbnail_url": "{{ story.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: 'assets/img/stories' | absolute_url }}",
+    "content": {{ story.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | jsonify }},
+    "slug": "{{ story.slug | escape }}",
+    "intro": {
+      "title": "{{ story.intro[0].title }}",
+      "paragraphs": [
+        {%- for paragraph in paragraphs %}
+        "{{ paragraph.line }}"{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  }{% unless forloop.last %},{% endunless %}
+  {%- endfor %}
 ]
