@@ -12,7 +12,7 @@ tags:
   - name: JavaScript
 type: intern
 members:
-    - name : "Manon Adriaens<br>&amp; Allissa Mae Enzon"
+    - name : "Manon Adriaens<br>&amp; Alyssa Mae Enzon"
       major: Crossmedia-ontwerp
       minor: Photo Design
       academic-year: 2de jaar
