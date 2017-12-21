@@ -11,7 +11,7 @@
     "title": "{{ project.title | escape }}",
     "title_long": "{{ project.title | escape }}",
     "description": "{{ project.description | escape }}",
-    "thumbnail_url": "{{ project.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: 'assets/img/projects/' | absolute_url }}",
+    "thumbnail_url": "{{ project.thumbnail.url | prepend: '/' | prepend: project.slug | prepend: 'assets/projects/' | absolute_url }}",
     "content": {{ post.content | strip_html | strip_newlines | remove:  "	" | escape | remove: "\" | jsonify }},
     "slug": "{{ project.slug | escape }}",
     "type": "{{ project.type | escape }}",
@@ -28,7 +28,7 @@
     "media": [
       {%- for medium in media %}
       {
-        "url": "{{ medium.url | prepend: '/' | prepend: project.slug | prepend: '/assets/img/projects/' | absolute_url }}",
+        "url": "{{ medium.url | prepend: '/' | prepend: project.slug | prepend: '/assets/projects/' | absolute_url }}",
         "type": "{{ medium.type | escape }}",
         "description": "{{ medium.text | escape }}"
       }{% unless forloop.last %},{% endunless %}
