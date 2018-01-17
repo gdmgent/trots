@@ -20,7 +20,7 @@
       {%- for tag in tags %}
       {
         "name": "{{ tag.name  | escape }}",
-        "version": "{{ tag.version | escape }}"
+        "version": "{{ tag.version }}"
       }{% unless forloop.last %},{% endunless %}
       {%- endfor %}
     ],
