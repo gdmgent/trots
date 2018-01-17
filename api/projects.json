@@ -4,6 +4,7 @@
 [
 {%- for project in projects %}
   {%- assign members = project.members %}
+  {%- assign tags = project.tags %}
   {%- assign media = project.media %}
   {
     "id": "{{ project.url | slugify }}",
@@ -27,8 +28,8 @@
       {%- for member in members %}
       {
         "name": "{{ member.name  | escape }}",
-        "version": "{{ member.direction | escape }}",
-        "option": "{{ member.subdirection | escape }}",
+        "major": "{{ member.major | escape }}",
+        "minor": "{{ member.minor | escape }}",
         "year": "{{ member.disk | escape }}"
       }{% unless forloop.last %},{% endunless %}
       {%- endfor %}
